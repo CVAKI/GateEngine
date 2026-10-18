@@ -9,12 +9,12 @@ const CONFIG = {
   // electron-builder names the NSIS installer "Gate Engine Setup <version>.exe"
   filename: (v) => `Gate Engine Setup ${v}.exe`,
   downloadDir: 'dist',
-  size: '109 MB',
+  size: '107 MB',
   // Optional: full URL of the installer if you host it on a GitHub Release instead of dist/.
   // Example: 'https://github.com/USER/REPO/releases/download/v0.8.0/Gate.Engine.Setup.0.8.0.exe'
   // (GitHub turns spaces in file names into dots.) Leave '' to use dist/.
-  downloadUrl: '',
-  github: '',                                  // e.g. 'https://github.com/yourname/GateEngine'; empty hides the GitHub links
+  downloadUrl: 'https://github.com/CVAKI/GateEngine/releases/download/v0.8.0/Gate.Engine.Setup.0.8.0.exe',
+  github: 'https://github.com/CVAKI/GateEngine',                                  // e.g. 'https://github.com/yourname/GateEngine'; empty hides the GitHub links
   linkedin: 'https://www.linkedin.com/in/cvaki-',
 };
 
