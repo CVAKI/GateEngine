@@ -1,6 +1,6 @@
 # Netlify: publish only the website, not the whole Electron project
 [build]
-  command = "rm -rf public && mkdir -p public && cp -r index.html 404.html robots.txt sitemap.xml favicon.ico web public/ && (cp -r dist public/ 2>/dev/null || true)"
+  command = "rm -rf public && mkdir -p public && cp -r index.html 404.html robots.txt sitemap.xml favicon.ico googlee8cab3d0c9db754d.html web public/ && (cp -r dist public/ 2>/dev/null || true)"
   publish = "public"
 
 [[headers]]
