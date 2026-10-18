@@ -1,7 +1,7 @@
 {
   "name": "gate-engine",
   "productName": "Gate Engine",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Logic gate circuit IDE - build plates, reuse them as components, simulate live.",
   "author": "CVAKI",
   "main": "main.js",
