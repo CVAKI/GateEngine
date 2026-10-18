@@ -1,0 +1,121 @@
+{
+  "format": 1,
+  "name": "counter.map",
+  "width": 80,
+  "height": 40,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "CLOCK",
+      "x": 40,
+      "y": 40,
+      "props": {
+        "label": "CLK"
+      }
+    },
+    {
+      "id": "n2",
+      "type": "INPUT",
+      "x": 40,
+      "y": 100,
+      "props": {
+        "label": "RST",
+        "value": 0
+      }
+    },
+    {
+      "id": "n3",
+      "type": "PLATE",
+      "x": 200,
+      "y": 40,
+      "props": {
+        "ref": "Counter 4-bit"
+      }
+    },
+    {
+      "id": "n6",
+      "type": "HEX",
+      "x": 460,
+      "y": 40,
+      "props": {}
+    },
+    {
+      "id": "n11",
+      "type": "LABEL",
+      "x": 40,
+      "y": 220,
+      "props": {
+        "label": "A clock counts 0 to 15 on a hex display. Trace the clock wire to see it reach every flip-flop."
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w4",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w5",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w7",
+      "from": {
+        "node": "n3",
+        "pin": "n45"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "d0"
+      }
+    },
+    {
+      "id": "w8",
+      "from": {
+        "node": "n3",
+        "pin": "n51"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "d1"
+      }
+    },
+    {
+      "id": "w9",
+      "from": {
+        "node": "n3",
+        "pin": "n57"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "d2"
+      }
+    },
+    {
+      "id": "w10",
+      "from": {
+        "node": "n3",
+        "pin": "n63"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "d3"
+      }
+    }
+  ],
+  "nextId": 12
+}

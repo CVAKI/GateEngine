@@ -1,0 +1,60 @@
+{
+  "name": "MyGPU32",
+  "format": 1,
+  "created": 1792264761944,
+  "main": "GPU32",
+  "folders": [
+    {
+      "id": "fmvcqxkxwu4",
+      "name": "4BIT",
+      "parent": null
+    },
+    {
+      "id": "fmvcqzec4xc",
+      "name": "8BIT",
+      "parent": null
+    },
+    {
+      "id": "fmvcr1lhbde",
+      "name": "ADDER",
+      "parent": null
+    },
+    {
+      "id": "fmvcr2zax5r",
+      "name": "E",
+      "parent": null
+    },
+    {
+      "id": "fgpu32",
+      "name": "GPU32",
+      "parent": null
+    }
+  ],
+  "placement": {
+    "4COMPAIR": "fmvcqxkxwu4",
+    "4INC-DEC": "fmvcqxkxwu4",
+    "4SUB": "fmvcqxkxwu4",
+    "4REG": "fmvcqxkxwu4",
+    "4MUX": "fmvcqxkxwu4",
+    "8B-COMPAIR": "fmvcqzec4xc",
+    "8BIT-AS": "fmvcqzec4xc",
+    "8REG": "fmvcqzec4xc",
+    "8MUX": "fmvcqzec4xc",
+    "8XOR": "fmvcqzec4xc",
+    "fullladder": "fmvcr1lhbde",
+    "halfadder": "fmvcr1lhbde",
+    "E2.map": "fmvcr2zax5r",
+    "E2G0": "fmvcr2zax5r",
+    "G-REG8": "fgpu32",
+    "G-ADD8": "fgpu32",
+    "G-MASK8": "fgpu32",
+    "G-REG32": "fgpu32",
+    "G-ADD32": "fgpu32",
+    "G-MUX32": "fgpu32",
+    "G-MASK32": "fgpu32",
+    "G-DATA": "fgpu32",
+    "G-CTRL": "fgpu32",
+    "G-ROM": "fgpu32",
+    "GPU32": "fgpu32"
+  }
+}

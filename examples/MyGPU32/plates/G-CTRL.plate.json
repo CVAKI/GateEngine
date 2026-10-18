@@ -1,0 +1,711 @@
+{
+  "format": 1,
+  "name": "G-CTRL",
+  "width": 98,
+  "height": 63,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "INPUT",
+      "x": 20,
+      "y": 20,
+      "props": {
+        "label": "CLK",
+        "value": 0
+      }
+    },
+    {
+      "id": "n2",
+      "type": "INPUT",
+      "x": 20,
+      "y": 70,
+      "props": {
+        "label": "RST",
+        "value": 0
+      }
+    },
+    {
+      "id": "n3",
+      "type": "INPUT",
+      "x": 20,
+      "y": 120,
+      "props": {
+        "label": "GO",
+        "value": 0
+      }
+    },
+    {
+      "id": "n4",
+      "type": "INPUT",
+      "x": 20,
+      "y": 170,
+      "props": {
+        "label": "EQ",
+        "value": 0
+      }
+    },
+    {
+      "id": "n5",
+      "type": "INPUT",
+      "x": 20,
+      "y": 220,
+      "props": {
+        "label": "FINISH",
+        "value": 0
+      }
+    },
+    {
+      "id": "n6",
+      "type": "CONST0",
+      "x": 20,
+      "y": 270,
+      "props": {}
+    },
+    {
+      "id": "n7",
+      "type": "PLATE",
+      "x": 700,
+      "y": 20,
+      "props": {
+        "ref": "DFF"
+      }
+    },
+    {
+      "id": "n11",
+      "type": "PLATE",
+      "x": 700,
+      "y": 140,
+      "props": {
+        "ref": "DFF"
+      }
+    },
+    {
+      "id": "n15",
+      "type": "PLATE",
+      "x": 700,
+      "y": 260,
+      "props": {
+        "ref": "DFF"
+      }
+    },
+    {
+      "id": "n19",
+      "type": "PLATE",
+      "x": 700,
+      "y": 380,
+      "props": {
+        "ref": "DFF"
+      }
+    },
+    {
+      "id": "n23",
+      "type": "NOR",
+      "x": 420,
+      "y": 20,
+      "props": {
+        "inputs": 4
+      }
+    },
+    {
+      "id": "n28",
+      "type": "NOT",
+      "x": 200,
+      "y": 220,
+      "props": {}
+    },
+    {
+      "id": "n30",
+      "type": "NOT",
+      "x": 200,
+      "y": 170,
+      "props": {}
+    },
+    {
+      "id": "n32",
+      "type": "AND",
+      "x": 520,
+      "y": 20,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n36",
+      "type": "AND",
+      "x": 420,
+      "y": 140,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n39",
+      "type": "OR",
+      "x": 560,
+      "y": 140,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n43",
+      "type": "AND",
+      "x": 420,
+      "y": 260,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n46",
+      "type": "OR",
+      "x": 560,
+      "y": 260,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n50",
+      "type": "AND",
+      "x": 520,
+      "y": 380,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n54",
+      "type": "OUTPUT",
+      "x": 900,
+      "y": 20,
+      "props": {
+        "label": "S0"
+      }
+    },
+    {
+      "id": "n56",
+      "type": "OUTPUT",
+      "x": 900,
+      "y": 70,
+      "props": {
+        "label": "S1"
+      }
+    },
+    {
+      "id": "n58",
+      "type": "OUTPUT",
+      "x": 900,
+      "y": 120,
+      "props": {
+        "label": "S2"
+      }
+    },
+    {
+      "id": "n60",
+      "type": "OUTPUT",
+      "x": 900,
+      "y": 170,
+      "props": {
+        "label": "S3"
+      }
+    },
+    {
+      "id": "n62",
+      "type": "OUTPUT",
+      "x": 900,
+      "y": 220,
+      "props": {
+        "label": "S4"
+      }
+    },
+    {
+      "id": "n64",
+      "type": "NOT",
+      "x": 780,
+      "y": 500,
+      "props": {}
+    },
+    {
+      "id": "n66",
+      "type": "OUTPUT",
+      "x": 900,
+      "y": 270,
+      "props": {
+        "label": "BUSY"
+      }
+    },
+    {
+      "id": "n68",
+      "type": "LABEL",
+      "x": 20,
+      "y": 540,
+      "props": {
+        "label": "One flip-flop per state, one lit at a time. IDLE is \"none of the others lit\", so it starts on its own at power-up."
+      }
+    },
+    {
+      "id": "n69",
+      "type": "LABEL",
+      "x": 20,
+      "y": 570,
+      "props": {
+        "label": "IDLE -GO-> PREP -> INIT -> RUN (draws a pixel every clock until EQ) -> ROWEND -> IDLE (or INIT again for the next row of a rectangle)."
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w8",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "n6"
+      }
+    },
+    {
+      "id": "w9",
+      "from": {
+        "node": "n6",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w10",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "n14"
+      }
+    },
+    {
+      "id": "w12",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n11",
+        "pin": "n6"
+      }
+    },
+    {
+      "id": "w13",
+      "from": {
+        "node": "n6",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n11",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w14",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n11",
+        "pin": "n14"
+      }
+    },
+    {
+      "id": "w16",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n15",
+        "pin": "n6"
+      }
+    },
+    {
+      "id": "w17",
+      "from": {
+        "node": "n6",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n15",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w18",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n15",
+        "pin": "n14"
+      }
+    },
+    {
+      "id": "w20",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n19",
+        "pin": "n6"
+      }
+    },
+    {
+      "id": "w21",
+      "from": {
+        "node": "n6",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n19",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w22",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n19",
+        "pin": "n14"
+      }
+    },
+    {
+      "id": "w24",
+      "from": {
+        "node": "n7",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n23",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w25",
+      "from": {
+        "node": "n11",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n23",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w26",
+      "from": {
+        "node": "n15",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n23",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w27",
+      "from": {
+        "node": "n19",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n23",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w29",
+      "from": {
+        "node": "n5",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n28",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w31",
+      "from": {
+        "node": "n4",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n30",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w33",
+      "from": {
+        "node": "n23",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n32",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w34",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n32",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w35",
+      "from": {
+        "node": "n32",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "n5"
+      }
+    },
+    {
+      "id": "w37",
+      "from": {
+        "node": "n19",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n36",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w38",
+      "from": {
+        "node": "n28",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n36",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w40",
+      "from": {
+        "node": "n7",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n39",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w41",
+      "from": {
+        "node": "n36",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n39",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w42",
+      "from": {
+        "node": "n39",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n11",
+        "pin": "n5"
+      }
+    },
+    {
+      "id": "w44",
+      "from": {
+        "node": "n15",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n43",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w45",
+      "from": {
+        "node": "n30",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n43",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w47",
+      "from": {
+        "node": "n11",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n46",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w48",
+      "from": {
+        "node": "n43",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n46",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w49",
+      "from": {
+        "node": "n46",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n15",
+        "pin": "n5"
+      }
+    },
+    {
+      "id": "w51",
+      "from": {
+        "node": "n15",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n50",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w52",
+      "from": {
+        "node": "n4",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n50",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w53",
+      "from": {
+        "node": "n50",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n19",
+        "pin": "n5"
+      }
+    },
+    {
+      "id": "w55",
+      "from": {
+        "node": "n23",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n54",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w57",
+      "from": {
+        "node": "n7",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n56",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w59",
+      "from": {
+        "node": "n11",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n58",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w61",
+      "from": {
+        "node": "n15",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n60",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w63",
+      "from": {
+        "node": "n19",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n62",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w65",
+      "from": {
+        "node": "n23",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n64",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w67",
+      "from": {
+        "node": "n64",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n66",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 70
+}

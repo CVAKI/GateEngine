@@ -1,0 +1,113 @@
+{
+  "format": 1,
+  "name": "SR",
+  "width": 80,
+  "height": 50,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "INPUT",
+      "x": 0,
+      "y": 10,
+      "props": {
+        "label": "S",
+        "value": 0
+      }
+    },
+    {
+      "id": "n2",
+      "type": "INPUT",
+      "x": 0,
+      "y": 50,
+      "props": {
+        "label": "R",
+        "value": 0
+      }
+    },
+    {
+      "id": "n3",
+      "type": "NOR",
+      "x": 30,
+      "y": 50,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n4",
+      "type": "NOR",
+      "x": 30,
+      "y": 10,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n5",
+      "type": "OUTPUT",
+      "x": 100,
+      "y": 50,
+      "props": {
+        "label": "Q"
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w6",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w7",
+      "from": {
+        "node": "n4",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w8",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w9",
+      "from": {
+        "node": "n3",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w10",
+      "from": {
+        "node": "n3",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 11
+}

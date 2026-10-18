@@ -1,0 +1,174 @@
+{
+  "format": 1,
+  "name": "FullAdder",
+  "width": 90,
+  "height": 50,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "INPUT",
+      "x": 10,
+      "y": 40,
+      "props": {
+        "label": "A",
+        "value": 0
+      }
+    },
+    {
+      "id": "n2",
+      "type": "INPUT",
+      "x": 10,
+      "y": 120,
+      "props": {
+        "label": "B",
+        "value": 0
+      }
+    },
+    {
+      "id": "n3",
+      "type": "INPUT",
+      "x": 10,
+      "y": 300,
+      "props": {
+        "label": "Cin",
+        "value": 0
+      }
+    },
+    {
+      "id": "n4",
+      "type": "PLATE",
+      "x": 150,
+      "y": 60,
+      "props": {
+        "ref": "HalfAdder"
+      }
+    },
+    {
+      "id": "n5",
+      "type": "PLATE",
+      "x": 400,
+      "y": 200,
+      "props": {
+        "ref": "HalfAdder"
+      }
+    },
+    {
+      "id": "n6",
+      "type": "OR",
+      "x": 640,
+      "y": 360,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n7",
+      "type": "OUTPUT",
+      "x": 800,
+      "y": 220,
+      "props": {
+        "label": "S"
+      }
+    },
+    {
+      "id": "n8",
+      "type": "OUTPUT",
+      "x": 800,
+      "y": 380,
+      "props": {
+        "label": "Cout"
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w9",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w10",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w11",
+      "from": {
+        "node": "n4",
+        "pin": "n5"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w12",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w13",
+      "from": {
+        "node": "n5",
+        "pin": "n5"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w14",
+      "from": {
+        "node": "n4",
+        "pin": "n6"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w15",
+      "from": {
+        "node": "n5",
+        "pin": "n6"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w16",
+      "from": {
+        "node": "n6",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 17
+}

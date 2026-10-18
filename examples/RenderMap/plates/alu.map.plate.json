@@ -1,0 +1,229 @@
+{
+  "format": 1,
+  "name": "alu.map",
+  "width": 90,
+  "height": 60,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "BUS_IN",
+      "x": 40,
+      "y": 40,
+      "props": {
+        "label": "A",
+        "bits": 8,
+        "value": 25,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n2",
+      "type": "BUS_IN",
+      "x": 40,
+      "y": 120,
+      "props": {
+        "label": "B",
+        "bits": 8,
+        "value": 17,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n3",
+      "type": "INPUT",
+      "x": 40,
+      "y": 200,
+      "props": {
+        "label": "SUB",
+        "value": 0
+      }
+    },
+    {
+      "id": "n4",
+      "type": "PLATE",
+      "x": 320,
+      "y": 40,
+      "props": {
+        "ref": "Add-Sub 8-bit"
+      }
+    },
+    {
+      "id": "n5",
+      "type": "PLATE",
+      "x": 320,
+      "y": 280,
+      "props": {
+        "ref": "Comparator 8-bit"
+      }
+    },
+    {
+      "id": "n11",
+      "type": "BUS_OUT",
+      "x": 640,
+      "y": 50,
+      "props": {
+        "label": "RESULT",
+        "bits": 8,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n13",
+      "type": "OUTPUT",
+      "x": 640,
+      "y": 130,
+      "props": {
+        "label": "COUT"
+      }
+    },
+    {
+      "id": "n15",
+      "type": "OUTPUT",
+      "x": 640,
+      "y": 300,
+      "props": {
+        "label": "GT"
+      }
+    },
+    {
+      "id": "n17",
+      "type": "OUTPUT",
+      "x": 640,
+      "y": 340,
+      "props": {
+        "label": "EQ"
+      }
+    },
+    {
+      "id": "n19",
+      "type": "OUTPUT",
+      "x": 640,
+      "y": 380,
+      "props": {
+        "label": "LT"
+      }
+    },
+    {
+      "id": "n21",
+      "type": "LABEL",
+      "x": 40,
+      "y": 450,
+      "props": {
+        "label": "Open \"Render map\" to see the adder, the XORs that flip B, and the comparator all the way down to gates."
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w6",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w7",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w8",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w9",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w10",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w12",
+      "from": {
+        "node": "n4",
+        "pin": "n20"
+      },
+      "to": {
+        "node": "n11",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w14",
+      "from": {
+        "node": "n4",
+        "pin": "n22"
+      },
+      "to": {
+        "node": "n13",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w16",
+      "from": {
+        "node": "n5",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n15",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w18",
+      "from": {
+        "node": "n5",
+        "pin": "n39"
+      },
+      "to": {
+        "node": "n17",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w20",
+      "from": {
+        "node": "n5",
+        "pin": "n41"
+      },
+      "to": {
+        "node": "n19",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 22
+}

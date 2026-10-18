@@ -1,0 +1,29 @@
+# Builds Gate Engine for Windows (.exe), macOS (.dmg) and Linux (.AppImage) on GitHub's own machines.
+# Push the project to GitHub, open the Actions tab, run "Build installers" (or push a tag like v0.5.0),
+# then download the installers from the run's "Artifacts" section.
+name: Build installers
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - run: npm test
+      - run: npx electron-builder --publish never
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gate-engine-${{ matrix.os }}
+          path: |
+            dist/*.exe
+            dist/*.dmg
+            dist/*.AppImage

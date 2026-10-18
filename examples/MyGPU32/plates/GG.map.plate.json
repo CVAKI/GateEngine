@@ -1,0 +1,33 @@
+{
+  "format": 1,
+  "name": "GG.map",
+  "width": 80,
+  "height": 50,
+  "nodes": [
+    {
+      "id": "n3",
+      "type": "SCREEN",
+      "x": 320,
+      "y": 160,
+      "props": {
+        "w": 32,
+        "h": 32,
+        "mode": "addr",
+        "color": "mono",
+        "write": "edge",
+        "view": 160
+      }
+    },
+    {
+      "id": "n4",
+      "type": "PLATE",
+      "x": 150,
+      "y": 180,
+      "props": {
+        "ref": "Hex decoder"
+      }
+    }
+  ],
+  "wires": [],
+  "nextId": 5
+}

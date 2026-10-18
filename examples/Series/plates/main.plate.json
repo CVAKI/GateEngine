@@ -1,0 +1,353 @@
+{
+  "format": 1,
+  "name": "main",
+  "width": 75,
+  "height": 62,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "BUS_IN",
+      "x": 40,
+      "y": 60,
+      "props": {
+        "label": "A",
+        "bits": 8,
+        "value": 200,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n2",
+      "type": "BUS_IN",
+      "x": 40,
+      "y": 140,
+      "props": {
+        "label": "B",
+        "bits": 8,
+        "value": 100,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n3",
+      "type": "INPUT",
+      "x": 40,
+      "y": 220,
+      "props": {
+        "label": "SUB",
+        "value": 0
+      }
+    },
+    {
+      "id": "n4",
+      "type": "PLATE",
+      "x": 320,
+      "y": 60,
+      "props": {
+        "ref": "Add-Sub 8-bit"
+      }
+    },
+    {
+      "id": "n5",
+      "type": "PLATE",
+      "x": 320,
+      "y": 260,
+      "props": {
+        "ref": "Comparator 8-bit"
+      }
+    },
+    {
+      "id": "n6",
+      "type": "BUS_OUT",
+      "x": 560,
+      "y": 70,
+      "props": {
+        "label": "A+B or A-B",
+        "bits": 8,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n7",
+      "type": "OUTPUT",
+      "x": 560,
+      "y": 130,
+      "props": {
+        "label": "Cout"
+      }
+    },
+    {
+      "id": "n8",
+      "type": "OUTPUT",
+      "x": 560,
+      "y": 270,
+      "props": {
+        "label": "GT"
+      }
+    },
+    {
+      "id": "n9",
+      "type": "OUTPUT",
+      "x": 560,
+      "y": 310,
+      "props": {
+        "label": "EQ"
+      }
+    },
+    {
+      "id": "n10",
+      "type": "OUTPUT",
+      "x": 560,
+      "y": 350,
+      "props": {
+        "label": "LT"
+      }
+    },
+    {
+      "id": "n21",
+      "type": "BUS_IN",
+      "x": 40,
+      "y": 480,
+      "props": {
+        "label": "D",
+        "bits": 8,
+        "value": 3,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n22",
+      "type": "INPUT",
+      "x": 40,
+      "y": 520,
+      "props": {
+        "label": "CLR",
+        "value": 0
+      }
+    },
+    {
+      "id": "n23",
+      "type": "CLOCK",
+      "x": 40,
+      "y": 560,
+      "props": {
+        "label": "CLK"
+      }
+    },
+    {
+      "id": "n24",
+      "type": "PLATE",
+      "x": 320,
+      "y": 480,
+      "props": {
+        "ref": "Accumulator"
+      }
+    },
+    {
+      "id": "n25",
+      "type": "BUS_OUT",
+      "x": 560,
+      "y": 490,
+      "props": {
+        "label": "Total",
+        "bits": 8,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n30",
+      "type": "LABEL",
+      "x": 40,
+      "y": 20,
+      "props": {
+        "label": "Click the cells of A and B. SUB=1 turns the adder into a subtractor."
+      }
+    },
+    {
+      "id": "n31",
+      "type": "LABEL",
+      "x": 40,
+      "y": 440,
+      "props": {
+        "label": "Accumulator: a plate with bus pins. Press Live, set D, watch Total grow with the clock."
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w11",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w12",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w13",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w14",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "n1"
+      },
+      "pts": [
+        {
+          "x": 250,
+          "y": 70
+        },
+        {
+          "x": 250,
+          "y": 280
+        }
+      ]
+    },
+    {
+      "id": "w15",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "n4"
+      },
+      "pts": [
+        {
+          "x": 270,
+          "y": 150
+        },
+        {
+          "x": 270,
+          "y": 300
+        }
+      ]
+    },
+    {
+      "id": "w16",
+      "from": {
+        "node": "n4",
+        "pin": "n20"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w17",
+      "from": {
+        "node": "n4",
+        "pin": "n22"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w18",
+      "from": {
+        "node": "n5",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w19",
+      "from": {
+        "node": "n5",
+        "pin": "n39"
+      },
+      "to": {
+        "node": "n9",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w20",
+      "from": {
+        "node": "n5",
+        "pin": "n41"
+      },
+      "to": {
+        "node": "n10",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w26",
+      "from": {
+        "node": "n21",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n24",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w27",
+      "from": {
+        "node": "n22",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n24",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w28",
+      "from": {
+        "node": "n23",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n24",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w29",
+      "from": {
+        "node": "n24",
+        "pin": "n7"
+      },
+      "to": {
+        "node": "n25",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 32
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /dist/
+
+Sitemap: https://gateengine.netlify.app/sitemap.xml

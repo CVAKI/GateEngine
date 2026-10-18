@@ -1,0 +1,276 @@
+{
+  "format": 1,
+  "name": "DL",
+  "width": 53,
+  "height": 20,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "PLATE",
+      "x": 350,
+      "y": 70,
+      "props": {
+        "ref": "SR"
+      }
+    },
+    {
+      "id": "n2",
+      "type": "OR",
+      "x": 270,
+      "y": 60,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n3",
+      "type": "AND",
+      "x": 180,
+      "y": 60,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n4",
+      "type": "OR",
+      "x": 270,
+      "y": 110,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n5",
+      "type": "AND",
+      "x": 180,
+      "y": 110,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n8",
+      "type": "NOT",
+      "x": 100,
+      "y": 80,
+      "props": {}
+    },
+    {
+      "id": "n9",
+      "type": "INPUT",
+      "x": 20,
+      "y": 70,
+      "props": {
+        "label": "DATA",
+        "value": 0
+      }
+    },
+    {
+      "id": "n10",
+      "type": "INPUT",
+      "x": 20,
+      "y": 120,
+      "props": {
+        "label": "LATCH",
+        "value": 1
+      }
+    },
+    {
+      "id": "n11",
+      "type": "OUTPUT",
+      "x": 480,
+      "y": 80,
+      "props": {
+        "label": "OUT1"
+      }
+    },
+    {
+      "id": "n20",
+      "type": "INPUT",
+      "x": 20,
+      "y": 30,
+      "props": {
+        "label": "S",
+        "value": 0
+      }
+    },
+    {
+      "id": "n21",
+      "type": "INPUT",
+      "x": 20,
+      "y": 160,
+      "props": {
+        "label": "R",
+        "value": 1
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w6",
+      "from": {
+        "node": "n2",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n1",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w7",
+      "from": {
+        "node": "n4",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n1",
+        "pin": "n2"
+      },
+      "pts": [
+        {
+          "x": 340,
+          "y": 130
+        },
+        {
+          "x": 340,
+          "y": 110
+        }
+      ]
+    },
+    {
+      "id": "w12",
+      "from": {
+        "node": "n1",
+        "pin": "n6"
+      },
+      "to": {
+        "node": "n11",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w13",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w14",
+      "from": {
+        "node": "n8",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w15",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w16",
+      "from": {
+        "node": "n10",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w17",
+      "from": {
+        "node": "n10",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "i0"
+      },
+      "pts": [
+        {
+          "x": 80,
+          "y": 130
+        },
+        {
+          "x": 80,
+          "y": 70
+        }
+      ]
+    },
+    {
+      "id": "w18",
+      "from": {
+        "node": "n3",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n2",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w19",
+      "from": {
+        "node": "n5",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w22",
+      "from": {
+        "node": "n20",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n2",
+        "pin": "i0"
+      },
+      "pts": [
+        {
+          "x": 270,
+          "y": 30
+        }
+      ]
+    },
+    {
+      "id": "w23",
+      "from": {
+        "node": "n21",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "i1"
+      },
+      "pts": [
+        {
+          "x": 270,
+          "y": 190
+        }
+      ]
+    }
+  ],
+  "nextId": 24
+}

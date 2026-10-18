@@ -1,0 +1,833 @@
+{
+  "format": 1,
+  "name": "G-ADD8",
+  "width": 89,
+  "height": 88,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "BUS_IN",
+      "x": 20,
+      "y": 20,
+      "props": {
+        "label": "A",
+        "bits": 8,
+        "value": 0,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n2",
+      "type": "BUS_IN",
+      "x": 20,
+      "y": 140,
+      "props": {
+        "label": "B",
+        "bits": 8,
+        "value": 0,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n3",
+      "type": "INPUT",
+      "x": 20,
+      "y": 300,
+      "props": {
+        "label": "XB",
+        "value": 0
+      }
+    },
+    {
+      "id": "n4",
+      "type": "INPUT",
+      "x": 20,
+      "y": 350,
+      "props": {
+        "label": "CIN",
+        "value": 0
+      }
+    },
+    {
+      "id": "n5",
+      "type": "SPLIT",
+      "x": 100,
+      "y": 20,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n7",
+      "type": "SPLIT",
+      "x": 100,
+      "y": 140,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n9",
+      "type": "XOR",
+      "x": 300,
+      "y": 20,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n12",
+      "type": "PLATE",
+      "x": 440,
+      "y": 20,
+      "props": {
+        "ref": "fullladder"
+      }
+    },
+    {
+      "id": "n16",
+      "type": "XOR",
+      "x": 300,
+      "y": 114,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n19",
+      "type": "PLATE",
+      "x": 440,
+      "y": 114,
+      "props": {
+        "ref": "fullladder"
+      }
+    },
+    {
+      "id": "n23",
+      "type": "XOR",
+      "x": 300,
+      "y": 208,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n26",
+      "type": "PLATE",
+      "x": 440,
+      "y": 208,
+      "props": {
+        "ref": "fullladder"
+      }
+    },
+    {
+      "id": "n30",
+      "type": "XOR",
+      "x": 300,
+      "y": 302,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n33",
+      "type": "PLATE",
+      "x": 440,
+      "y": 302,
+      "props": {
+        "ref": "fullladder"
+      }
+    },
+    {
+      "id": "n37",
+      "type": "XOR",
+      "x": 300,
+      "y": 396,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n40",
+      "type": "PLATE",
+      "x": 440,
+      "y": 396,
+      "props": {
+        "ref": "fullladder"
+      }
+    },
+    {
+      "id": "n44",
+      "type": "XOR",
+      "x": 300,
+      "y": 490,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n47",
+      "type": "PLATE",
+      "x": 440,
+      "y": 490,
+      "props": {
+        "ref": "fullladder"
+      }
+    },
+    {
+      "id": "n51",
+      "type": "XOR",
+      "x": 300,
+      "y": 584,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n54",
+      "type": "PLATE",
+      "x": 440,
+      "y": 584,
+      "props": {
+        "ref": "fullladder"
+      }
+    },
+    {
+      "id": "n58",
+      "type": "XOR",
+      "x": 300,
+      "y": 678,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n61",
+      "type": "PLATE",
+      "x": 440,
+      "y": 678,
+      "props": {
+        "ref": "fullladder"
+      }
+    },
+    {
+      "id": "n65",
+      "type": "MERGE",
+      "x": 620,
+      "y": 20,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n74",
+      "type": "BUS_OUT",
+      "x": 700,
+      "y": 60,
+      "props": {
+        "label": "S",
+        "bits": 8,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n76",
+      "type": "OUTPUT",
+      "x": 700,
+      "y": 772,
+      "props": {
+        "label": "COUT"
+      }
+    },
+    {
+      "id": "n78",
+      "type": "LABEL",
+      "x": 120,
+      "y": 812,
+      "props": {
+        "label": "8 full adders in a row. Subtract: XB=1 flips every bit of B and CIN=1 adds the 1."
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w6",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w8",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w10",
+      "from": {
+        "node": "n7",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n9",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w11",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n9",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w13",
+      "from": {
+        "node": "n5",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n12",
+        "pin": "n11"
+      }
+    },
+    {
+      "id": "w14",
+      "from": {
+        "node": "n9",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n12",
+        "pin": "n12"
+      }
+    },
+    {
+      "id": "w15",
+      "from": {
+        "node": "n4",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n12",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w17",
+      "from": {
+        "node": "n7",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w18",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w20",
+      "from": {
+        "node": "n5",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n19",
+        "pin": "n11"
+      }
+    },
+    {
+      "id": "w21",
+      "from": {
+        "node": "n16",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n19",
+        "pin": "n12"
+      }
+    },
+    {
+      "id": "w22",
+      "from": {
+        "node": "n12",
+        "pin": "n4"
+      },
+      "to": {
+        "node": "n19",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w24",
+      "from": {
+        "node": "n7",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n23",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w25",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n23",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w27",
+      "from": {
+        "node": "n5",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n26",
+        "pin": "n11"
+      }
+    },
+    {
+      "id": "w28",
+      "from": {
+        "node": "n23",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n26",
+        "pin": "n12"
+      }
+    },
+    {
+      "id": "w29",
+      "from": {
+        "node": "n19",
+        "pin": "n4"
+      },
+      "to": {
+        "node": "n26",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w31",
+      "from": {
+        "node": "n7",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n30",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w32",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n30",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w34",
+      "from": {
+        "node": "n5",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n33",
+        "pin": "n11"
+      }
+    },
+    {
+      "id": "w35",
+      "from": {
+        "node": "n30",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n33",
+        "pin": "n12"
+      }
+    },
+    {
+      "id": "w36",
+      "from": {
+        "node": "n26",
+        "pin": "n4"
+      },
+      "to": {
+        "node": "n33",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w38",
+      "from": {
+        "node": "n7",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n37",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w39",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n37",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w41",
+      "from": {
+        "node": "n5",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n40",
+        "pin": "n11"
+      }
+    },
+    {
+      "id": "w42",
+      "from": {
+        "node": "n37",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n40",
+        "pin": "n12"
+      }
+    },
+    {
+      "id": "w43",
+      "from": {
+        "node": "n33",
+        "pin": "n4"
+      },
+      "to": {
+        "node": "n40",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w45",
+      "from": {
+        "node": "n7",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n44",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w46",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n44",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w48",
+      "from": {
+        "node": "n5",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n47",
+        "pin": "n11"
+      }
+    },
+    {
+      "id": "w49",
+      "from": {
+        "node": "n44",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n47",
+        "pin": "n12"
+      }
+    },
+    {
+      "id": "w50",
+      "from": {
+        "node": "n40",
+        "pin": "n4"
+      },
+      "to": {
+        "node": "n47",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w52",
+      "from": {
+        "node": "n7",
+        "pin": "o6"
+      },
+      "to": {
+        "node": "n51",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w53",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n51",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w55",
+      "from": {
+        "node": "n5",
+        "pin": "o6"
+      },
+      "to": {
+        "node": "n54",
+        "pin": "n11"
+      }
+    },
+    {
+      "id": "w56",
+      "from": {
+        "node": "n51",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n54",
+        "pin": "n12"
+      }
+    },
+    {
+      "id": "w57",
+      "from": {
+        "node": "n47",
+        "pin": "n4"
+      },
+      "to": {
+        "node": "n54",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w59",
+      "from": {
+        "node": "n7",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n58",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w60",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n58",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w62",
+      "from": {
+        "node": "n5",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n61",
+        "pin": "n11"
+      }
+    },
+    {
+      "id": "w63",
+      "from": {
+        "node": "n58",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n61",
+        "pin": "n12"
+      }
+    },
+    {
+      "id": "w64",
+      "from": {
+        "node": "n54",
+        "pin": "n4"
+      },
+      "to": {
+        "node": "n61",
+        "pin": "n13"
+      }
+    },
+    {
+      "id": "w66",
+      "from": {
+        "node": "n12",
+        "pin": "n5"
+      },
+      "to": {
+        "node": "n65",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w67",
+      "from": {
+        "node": "n19",
+        "pin": "n5"
+      },
+      "to": {
+        "node": "n65",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w68",
+      "from": {
+        "node": "n26",
+        "pin": "n5"
+      },
+      "to": {
+        "node": "n65",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w69",
+      "from": {
+        "node": "n33",
+        "pin": "n5"
+      },
+      "to": {
+        "node": "n65",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w70",
+      "from": {
+        "node": "n40",
+        "pin": "n5"
+      },
+      "to": {
+        "node": "n65",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w71",
+      "from": {
+        "node": "n47",
+        "pin": "n5"
+      },
+      "to": {
+        "node": "n65",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w72",
+      "from": {
+        "node": "n54",
+        "pin": "n5"
+      },
+      "to": {
+        "node": "n65",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w73",
+      "from": {
+        "node": "n61",
+        "pin": "n5"
+      },
+      "to": {
+        "node": "n65",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w75",
+      "from": {
+        "node": "n65",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n74",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w77",
+      "from": {
+        "node": "n61",
+        "pin": "n4"
+      },
+      "to": {
+        "node": "n76",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 79
+}

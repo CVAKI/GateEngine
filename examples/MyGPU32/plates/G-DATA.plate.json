@@ -1,0 +1,5736 @@
+{
+  "format": 1,
+  "name": "G-DATA",
+  "width": 251,
+  "height": 256,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "BUS_IN",
+      "x": 20,
+      "y": 20,
+      "props": {
+        "label": "CMDIN",
+        "bits": 32,
+        "value": 0,
+        "fmt": "hex"
+      }
+    },
+    {
+      "id": "n2",
+      "type": "INPUT",
+      "x": 20,
+      "y": 120,
+      "props": {
+        "label": "S0",
+        "value": 0
+      }
+    },
+    {
+      "id": "n3",
+      "type": "INPUT",
+      "x": 20,
+      "y": 170,
+      "props": {
+        "label": "S1",
+        "value": 0
+      }
+    },
+    {
+      "id": "n4",
+      "type": "INPUT",
+      "x": 20,
+      "y": 220,
+      "props": {
+        "label": "S2",
+        "value": 0
+      }
+    },
+    {
+      "id": "n5",
+      "type": "INPUT",
+      "x": 20,
+      "y": 270,
+      "props": {
+        "label": "S3",
+        "value": 0
+      }
+    },
+    {
+      "id": "n6",
+      "type": "INPUT",
+      "x": 20,
+      "y": 320,
+      "props": {
+        "label": "S4",
+        "value": 0
+      }
+    },
+    {
+      "id": "n7",
+      "type": "INPUT",
+      "x": 20,
+      "y": 370,
+      "props": {
+        "label": "CLK",
+        "value": 0
+      }
+    },
+    {
+      "id": "n8",
+      "type": "CONST0",
+      "x": 20,
+      "y": 420,
+      "props": {}
+    },
+    {
+      "id": "n9",
+      "type": "CONST1",
+      "x": 20,
+      "y": 470,
+      "props": {}
+    },
+    {
+      "id": "n10",
+      "type": "PLATE",
+      "x": 420,
+      "y": 40,
+      "props": {
+        "ref": "G-REG32"
+      }
+    },
+    {
+      "id": "n14",
+      "type": "SPLIT",
+      "x": 800,
+      "y": 40,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n16",
+      "type": "MERGE",
+      "x": 800,
+      "y": 190,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n25",
+      "type": "MERGE",
+      "x": 800,
+      "y": 300,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n34",
+      "type": "MERGE",
+      "x": 800,
+      "y": 340,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n43",
+      "type": "MERGE",
+      "x": 800,
+      "y": 450,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n52",
+      "type": "MERGE",
+      "x": 800,
+      "y": 490,
+      "props": {
+        "bits": 3,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n56",
+      "type": "PLATE",
+      "x": 40,
+      "y": 640,
+      "props": {
+        "ref": "G-REG8"
+      }
+    },
+    {
+      "id": "n58",
+      "type": "PLATE",
+      "x": 40,
+      "y": 790,
+      "props": {
+        "ref": "G-REG8"
+      }
+    },
+    {
+      "id": "n60",
+      "type": "PLATE",
+      "x": 40,
+      "y": 940,
+      "props": {
+        "ref": "G-REG8"
+      }
+    },
+    {
+      "id": "n62",
+      "type": "PLATE",
+      "x": 40,
+      "y": 1090,
+      "props": {
+        "ref": "G-REG8"
+      }
+    },
+    {
+      "id": "n65",
+      "type": "PLATE",
+      "x": 40,
+      "y": 1240,
+      "props": {
+        "ref": "G-REG8"
+      }
+    },
+    {
+      "id": "n68",
+      "type": "PLATE",
+      "x": 40,
+      "y": 1390,
+      "props": {
+        "ref": "G-REG8"
+      }
+    },
+    {
+      "id": "n71",
+      "type": "PLATE",
+      "x": 40,
+      "y": 1540,
+      "props": {
+        "ref": "G-REG32"
+      }
+    },
+    {
+      "id": "n73",
+      "type": "PLATE",
+      "x": 1180,
+      "y": 40,
+      "props": {
+        "ref": "8MUX"
+      }
+    },
+    {
+      "id": "n77",
+      "type": "PLATE",
+      "x": 1180,
+      "y": 190,
+      "props": {
+        "ref": "G-ADD8"
+      }
+    },
+    {
+      "id": "n82",
+      "type": "PLATE",
+      "x": 1180,
+      "y": 340,
+      "props": {
+        "ref": "G-ADD8"
+      }
+    },
+    {
+      "id": "n87",
+      "type": "PLATE",
+      "x": 1180,
+      "y": 490,
+      "props": {
+        "ref": "G-ADD8"
+      }
+    },
+    {
+      "id": "n92",
+      "type": "PLATE",
+      "x": 1180,
+      "y": 640,
+      "props": {
+        "ref": "G-ADD8"
+      }
+    },
+    {
+      "id": "n97",
+      "type": "SPLIT",
+      "x": 1560,
+      "y": 190,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n99",
+      "type": "SPLIT",
+      "x": 1560,
+      "y": 490,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n101",
+      "type": "PLATE",
+      "x": 1560,
+      "y": 340,
+      "props": {
+        "ref": "8MUX"
+      }
+    },
+    {
+      "id": "n105",
+      "type": "PLATE",
+      "x": 1560,
+      "y": 640,
+      "props": {
+        "ref": "8MUX"
+      }
+    },
+    {
+      "id": "n109",
+      "type": "SPLIT",
+      "x": 1940,
+      "y": 340,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n111",
+      "type": "SPLIT",
+      "x": 1940,
+      "y": 640,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n113",
+      "type": "MERGE",
+      "x": 1940,
+      "y": 790,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n146",
+      "type": "MERGE",
+      "x": 1940,
+      "y": 940,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n179",
+      "type": "PLATE",
+      "x": 1940,
+      "y": 1090,
+      "props": {
+        "ref": "G-ADD32"
+      }
+    },
+    {
+      "id": "n183",
+      "type": "SPLIT",
+      "x": 420,
+      "y": 1090,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n185",
+      "type": "SPLIT",
+      "x": 420,
+      "y": 1240,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n187",
+      "type": "SPLIT",
+      "x": 420,
+      "y": 1390,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n189",
+      "type": "MERGE",
+      "x": 420,
+      "y": 850,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n222",
+      "type": "MERGE",
+      "x": 420,
+      "y": 1000,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n255",
+      "type": "SPLIT",
+      "x": 420,
+      "y": 1540,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n257",
+      "type": "MERGE",
+      "x": 800,
+      "y": 1540,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n290",
+      "type": "PLATE",
+      "x": 800,
+      "y": 790,
+      "props": {
+        "ref": "G-ADD32"
+      }
+    },
+    {
+      "id": "n294",
+      "type": "PLATE",
+      "x": 800,
+      "y": 1090,
+      "props": {
+        "ref": "G-ADD32"
+      }
+    },
+    {
+      "id": "n298",
+      "type": "SPLIT",
+      "x": 1180,
+      "y": 790,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n300",
+      "type": "SPLIT",
+      "x": 1180,
+      "y": 1090,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n302",
+      "type": "NOT",
+      "x": 1560,
+      "y": 790,
+      "props": {}
+    },
+    {
+      "id": "n304",
+      "type": "NOT",
+      "x": 1560,
+      "y": 1090,
+      "props": {}
+    },
+    {
+      "id": "n306",
+      "type": "PLATE",
+      "x": 1180,
+      "y": 1240,
+      "props": {
+        "ref": "G-MASK32"
+      }
+    },
+    {
+      "id": "n309",
+      "type": "PLATE",
+      "x": 1180,
+      "y": 1540,
+      "props": {
+        "ref": "G-MASK32"
+      }
+    },
+    {
+      "id": "n312",
+      "type": "PLATE",
+      "x": 1560,
+      "y": 1240,
+      "props": {
+        "ref": "G-ADD32"
+      }
+    },
+    {
+      "id": "n316",
+      "type": "PLATE",
+      "x": 1560,
+      "y": 1540,
+      "props": {
+        "ref": "G-ADD32"
+      }
+    },
+    {
+      "id": "n320",
+      "type": "AND",
+      "x": 1940,
+      "y": 1390,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n323",
+      "type": "AND",
+      "x": 1940,
+      "y": 1430,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n326",
+      "type": "MERGE",
+      "x": 1940,
+      "y": 1470,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n335",
+      "type": "MERGE",
+      "x": 1940,
+      "y": 1580,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n344",
+      "type": "PLATE",
+      "x": 1180,
+      "y": 1390,
+      "props": {
+        "ref": "G-ADD8"
+      }
+    },
+    {
+      "id": "n349",
+      "type": "PLATE",
+      "x": 1180,
+      "y": 1690,
+      "props": {
+        "ref": "G-ADD8"
+      }
+    },
+    {
+      "id": "n354",
+      "type": "MERGE",
+      "x": 420,
+      "y": 620,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n363",
+      "type": "PLATE",
+      "x": 420,
+      "y": 490,
+      "props": {
+        "ref": "G-ADD8"
+      }
+    },
+    {
+      "id": "n368",
+      "type": "SPLIT",
+      "x": 420,
+      "y": 1690,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n370",
+      "type": "SPLIT",
+      "x": 420,
+      "y": 1840,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n372",
+      "type": "SPLIT",
+      "x": 420,
+      "y": 1990,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n374",
+      "type": "XNOR",
+      "x": 800,
+      "y": 1840,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n377",
+      "type": "XNOR",
+      "x": 850,
+      "y": 1840,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n380",
+      "type": "XNOR",
+      "x": 900,
+      "y": 1840,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n383",
+      "type": "XNOR",
+      "x": 800,
+      "y": 1880,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n386",
+      "type": "XNOR",
+      "x": 850,
+      "y": 1880,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n389",
+      "type": "XNOR",
+      "x": 900,
+      "y": 1880,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n392",
+      "type": "AND",
+      "x": 960,
+      "y": 1860,
+      "props": {
+        "inputs": 6
+      }
+    },
+    {
+      "id": "n399",
+      "type": "XNOR",
+      "x": 800,
+      "y": 1990,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n402",
+      "type": "XNOR",
+      "x": 850,
+      "y": 1990,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n405",
+      "type": "XNOR",
+      "x": 900,
+      "y": 1990,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n408",
+      "type": "XNOR",
+      "x": 800,
+      "y": 2030,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n411",
+      "type": "XNOR",
+      "x": 850,
+      "y": 2030,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n414",
+      "type": "XNOR",
+      "x": 900,
+      "y": 2030,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n417",
+      "type": "AND",
+      "x": 960,
+      "y": 2010,
+      "props": {
+        "inputs": 6
+      }
+    },
+    {
+      "id": "n424",
+      "type": "XNOR",
+      "x": 800,
+      "y": 2140,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n427",
+      "type": "XNOR",
+      "x": 850,
+      "y": 2140,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n430",
+      "type": "XNOR",
+      "x": 900,
+      "y": 2140,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n433",
+      "type": "XNOR",
+      "x": 800,
+      "y": 2180,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n436",
+      "type": "XNOR",
+      "x": 850,
+      "y": 2180,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n439",
+      "type": "XNOR",
+      "x": 900,
+      "y": 2180,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n442",
+      "type": "AND",
+      "x": 960,
+      "y": 2160,
+      "props": {
+        "inputs": 6
+      }
+    },
+    {
+      "id": "n449",
+      "type": "OR",
+      "x": 1180,
+      "y": 1880,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n452",
+      "type": "AND",
+      "x": 1180,
+      "y": 1840,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n455",
+      "type": "NOT",
+      "x": 1180,
+      "y": 2180,
+      "props": {}
+    },
+    {
+      "id": "n457",
+      "type": "OR",
+      "x": 1180,
+      "y": 2140,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n460",
+      "type": "NOT",
+      "x": 1560,
+      "y": 2030,
+      "props": {}
+    },
+    {
+      "id": "n462",
+      "type": "AND",
+      "x": 1560,
+      "y": 1990,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n465",
+      "type": "OR",
+      "x": 1560,
+      "y": 2140,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n468",
+      "type": "OR",
+      "x": 1560,
+      "y": 2290,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n471",
+      "type": "PLATE",
+      "x": 800,
+      "y": 2290,
+      "props": {
+        "ref": "8MUX"
+      }
+    },
+    {
+      "id": "n477",
+      "type": "PLATE",
+      "x": 1180,
+      "y": 2290,
+      "props": {
+        "ref": "8MUX"
+      }
+    },
+    {
+      "id": "n481",
+      "type": "PLATE",
+      "x": 1180,
+      "y": 2440,
+      "props": {
+        "ref": "8MUX"
+      }
+    },
+    {
+      "id": "n491",
+      "type": "MERGE",
+      "x": 800,
+      "y": 1390,
+      "props": {
+        "bits": 8,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n501",
+      "type": "PLATE",
+      "x": 1940,
+      "y": 1690,
+      "props": {
+        "ref": "G-MUX32"
+      }
+    },
+    {
+      "id": "n507",
+      "type": "OUTPUT",
+      "x": 2320,
+      "y": 40,
+      "props": {
+        "label": "EQ"
+      }
+    },
+    {
+      "id": "n509",
+      "type": "OUTPUT",
+      "x": 2320,
+      "y": 190,
+      "props": {
+        "label": "FINISH"
+      }
+    },
+    {
+      "id": "n511",
+      "type": "MERGE",
+      "x": 2090,
+      "y": 1840,
+      "props": {
+        "bits": 6,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n518",
+      "type": "BUS_OUT",
+      "x": 2320,
+      "y": 340,
+      "props": {
+        "label": "PX",
+        "bits": 6,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n520",
+      "type": "MERGE",
+      "x": 2090,
+      "y": 1990,
+      "props": {
+        "bits": 6,
+        "flip": false,
+        "group": 1
+      }
+    },
+    {
+      "id": "n527",
+      "type": "BUS_OUT",
+      "x": 2320,
+      "y": 490,
+      "props": {
+        "label": "PY",
+        "bits": 6,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n529",
+      "type": "BUS_OUT",
+      "x": 2320,
+      "y": 640,
+      "props": {
+        "label": "RGB",
+        "bits": 3,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n531",
+      "type": "BUS_OUT",
+      "x": 2320,
+      "y": 790,
+      "props": {
+        "label": "ERR",
+        "bits": 32,
+        "fmt": "signed"
+      }
+    },
+    {
+      "id": "n533",
+      "type": "BUS_OUT",
+      "x": 2320,
+      "y": 940,
+      "props": {
+        "label": "CMD",
+        "bits": 32,
+        "fmt": "hex"
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w11",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n10",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w12",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n10",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w13",
+      "from": {
+        "node": "n7",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n10",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w15",
+      "from": {
+        "node": "n10",
+        "pin": "n27"
+      },
+      "to": {
+        "node": "n14",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w17",
+      "from": {
+        "node": "n14",
+        "pin": "o22"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w18",
+      "from": {
+        "node": "n14",
+        "pin": "o23"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w19",
+      "from": {
+        "node": "n14",
+        "pin": "o24"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w20",
+      "from": {
+        "node": "n14",
+        "pin": "o25"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w21",
+      "from": {
+        "node": "n14",
+        "pin": "o26"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w22",
+      "from": {
+        "node": "n14",
+        "pin": "o27"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w23",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w24",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w26",
+      "from": {
+        "node": "n14",
+        "pin": "o16"
+      },
+      "to": {
+        "node": "n25",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w27",
+      "from": {
+        "node": "n14",
+        "pin": "o17"
+      },
+      "to": {
+        "node": "n25",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w28",
+      "from": {
+        "node": "n14",
+        "pin": "o18"
+      },
+      "to": {
+        "node": "n25",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w29",
+      "from": {
+        "node": "n14",
+        "pin": "o19"
+      },
+      "to": {
+        "node": "n25",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w30",
+      "from": {
+        "node": "n14",
+        "pin": "o20"
+      },
+      "to": {
+        "node": "n25",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w31",
+      "from": {
+        "node": "n14",
+        "pin": "o21"
+      },
+      "to": {
+        "node": "n25",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w32",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n25",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w33",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n25",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w35",
+      "from": {
+        "node": "n14",
+        "pin": "o10"
+      },
+      "to": {
+        "node": "n34",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w36",
+      "from": {
+        "node": "n14",
+        "pin": "o11"
+      },
+      "to": {
+        "node": "n34",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w37",
+      "from": {
+        "node": "n14",
+        "pin": "o12"
+      },
+      "to": {
+        "node": "n34",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w38",
+      "from": {
+        "node": "n14",
+        "pin": "o13"
+      },
+      "to": {
+        "node": "n34",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w39",
+      "from": {
+        "node": "n14",
+        "pin": "o14"
+      },
+      "to": {
+        "node": "n34",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w40",
+      "from": {
+        "node": "n14",
+        "pin": "o15"
+      },
+      "to": {
+        "node": "n34",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w41",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n34",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w42",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n34",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w44",
+      "from": {
+        "node": "n14",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n43",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w45",
+      "from": {
+        "node": "n14",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n43",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w46",
+      "from": {
+        "node": "n14",
+        "pin": "o6"
+      },
+      "to": {
+        "node": "n43",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w47",
+      "from": {
+        "node": "n14",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n43",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w48",
+      "from": {
+        "node": "n14",
+        "pin": "o8"
+      },
+      "to": {
+        "node": "n43",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w49",
+      "from": {
+        "node": "n14",
+        "pin": "o9"
+      },
+      "to": {
+        "node": "n43",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w50",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n43",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w51",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n43",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w53",
+      "from": {
+        "node": "n14",
+        "pin": "o28"
+      },
+      "to": {
+        "node": "n52",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w54",
+      "from": {
+        "node": "n14",
+        "pin": "o29"
+      },
+      "to": {
+        "node": "n52",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w55",
+      "from": {
+        "node": "n14",
+        "pin": "o30"
+      },
+      "to": {
+        "node": "n52",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w57",
+      "from": {
+        "node": "n7",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n56",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w59",
+      "from": {
+        "node": "n7",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n58",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w61",
+      "from": {
+        "node": "n7",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n60",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w63",
+      "from": {
+        "node": "n7",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n62",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w64",
+      "from": {
+        "node": "n4",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n62",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w66",
+      "from": {
+        "node": "n7",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n65",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w67",
+      "from": {
+        "node": "n4",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n65",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w69",
+      "from": {
+        "node": "n7",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n68",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w70",
+      "from": {
+        "node": "n4",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n68",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w72",
+      "from": {
+        "node": "n7",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n71",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w74",
+      "from": {
+        "node": "n43",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n73",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w75",
+      "from": {
+        "node": "n56",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n73",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w76",
+      "from": {
+        "node": "n14",
+        "pin": "o31"
+      },
+      "to": {
+        "node": "n73",
+        "pin": "n34"
+      }
+    },
+    {
+      "id": "w78",
+      "from": {
+        "node": "n34",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n77",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w79",
+      "from": {
+        "node": "n16",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n77",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w80",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n77",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w81",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n77",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w83",
+      "from": {
+        "node": "n16",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n82",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w84",
+      "from": {
+        "node": "n34",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n82",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w85",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n82",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w86",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n82",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w88",
+      "from": {
+        "node": "n73",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n87",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w89",
+      "from": {
+        "node": "n56",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n87",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w90",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n87",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w91",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n87",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w93",
+      "from": {
+        "node": "n56",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n92",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w94",
+      "from": {
+        "node": "n73",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n92",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w95",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n92",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w96",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n92",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w98",
+      "from": {
+        "node": "n77",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n97",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w100",
+      "from": {
+        "node": "n87",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n99",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w102",
+      "from": {
+        "node": "n77",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n101",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w103",
+      "from": {
+        "node": "n82",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n101",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w104",
+      "from": {
+        "node": "n97",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n101",
+        "pin": "n34"
+      }
+    },
+    {
+      "id": "w106",
+      "from": {
+        "node": "n92",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n105",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w107",
+      "from": {
+        "node": "n87",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n105",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w108",
+      "from": {
+        "node": "n99",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n105",
+        "pin": "n34"
+      }
+    },
+    {
+      "id": "w110",
+      "from": {
+        "node": "n101",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n109",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w112",
+      "from": {
+        "node": "n105",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n111",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w114",
+      "from": {
+        "node": "n109",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w115",
+      "from": {
+        "node": "n109",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w116",
+      "from": {
+        "node": "n109",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w117",
+      "from": {
+        "node": "n109",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w118",
+      "from": {
+        "node": "n109",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w119",
+      "from": {
+        "node": "n109",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w120",
+      "from": {
+        "node": "n109",
+        "pin": "o6"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w121",
+      "from": {
+        "node": "n109",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w122",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i8"
+      }
+    },
+    {
+      "id": "w123",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i9"
+      }
+    },
+    {
+      "id": "w124",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i10"
+      }
+    },
+    {
+      "id": "w125",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i11"
+      }
+    },
+    {
+      "id": "w126",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i12"
+      }
+    },
+    {
+      "id": "w127",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i13"
+      }
+    },
+    {
+      "id": "w128",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i14"
+      }
+    },
+    {
+      "id": "w129",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i15"
+      }
+    },
+    {
+      "id": "w130",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i16"
+      }
+    },
+    {
+      "id": "w131",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i17"
+      }
+    },
+    {
+      "id": "w132",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i18"
+      }
+    },
+    {
+      "id": "w133",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i19"
+      }
+    },
+    {
+      "id": "w134",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i20"
+      }
+    },
+    {
+      "id": "w135",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i21"
+      }
+    },
+    {
+      "id": "w136",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i22"
+      }
+    },
+    {
+      "id": "w137",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i23"
+      }
+    },
+    {
+      "id": "w138",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i24"
+      }
+    },
+    {
+      "id": "w139",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i25"
+      }
+    },
+    {
+      "id": "w140",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i26"
+      }
+    },
+    {
+      "id": "w141",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i27"
+      }
+    },
+    {
+      "id": "w142",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i28"
+      }
+    },
+    {
+      "id": "w143",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i29"
+      }
+    },
+    {
+      "id": "w144",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i30"
+      }
+    },
+    {
+      "id": "w145",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n113",
+        "pin": "i31"
+      }
+    },
+    {
+      "id": "w147",
+      "from": {
+        "node": "n111",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w148",
+      "from": {
+        "node": "n111",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w149",
+      "from": {
+        "node": "n111",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w150",
+      "from": {
+        "node": "n111",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w151",
+      "from": {
+        "node": "n111",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w152",
+      "from": {
+        "node": "n111",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w153",
+      "from": {
+        "node": "n111",
+        "pin": "o6"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w154",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w155",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i8"
+      }
+    },
+    {
+      "id": "w156",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i9"
+      }
+    },
+    {
+      "id": "w157",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i10"
+      }
+    },
+    {
+      "id": "w158",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i11"
+      }
+    },
+    {
+      "id": "w159",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i12"
+      }
+    },
+    {
+      "id": "w160",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i13"
+      }
+    },
+    {
+      "id": "w161",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i14"
+      }
+    },
+    {
+      "id": "w162",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i15"
+      }
+    },
+    {
+      "id": "w163",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i16"
+      }
+    },
+    {
+      "id": "w164",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i17"
+      }
+    },
+    {
+      "id": "w165",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i18"
+      }
+    },
+    {
+      "id": "w166",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i19"
+      }
+    },
+    {
+      "id": "w167",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i20"
+      }
+    },
+    {
+      "id": "w168",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i21"
+      }
+    },
+    {
+      "id": "w169",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i22"
+      }
+    },
+    {
+      "id": "w170",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i23"
+      }
+    },
+    {
+      "id": "w171",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i24"
+      }
+    },
+    {
+      "id": "w172",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i25"
+      }
+    },
+    {
+      "id": "w173",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i26"
+      }
+    },
+    {
+      "id": "w174",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i27"
+      }
+    },
+    {
+      "id": "w175",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i28"
+      }
+    },
+    {
+      "id": "w176",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i29"
+      }
+    },
+    {
+      "id": "w177",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i30"
+      }
+    },
+    {
+      "id": "w178",
+      "from": {
+        "node": "n111",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n146",
+        "pin": "i31"
+      }
+    },
+    {
+      "id": "w180",
+      "from": {
+        "node": "n113",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n179",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w181",
+      "from": {
+        "node": "n146",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n179",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w182",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n179",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w184",
+      "from": {
+        "node": "n62",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n183",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w186",
+      "from": {
+        "node": "n65",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n185",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w188",
+      "from": {
+        "node": "n68",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n187",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w190",
+      "from": {
+        "node": "n183",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w191",
+      "from": {
+        "node": "n183",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w192",
+      "from": {
+        "node": "n183",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w193",
+      "from": {
+        "node": "n183",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w194",
+      "from": {
+        "node": "n183",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w195",
+      "from": {
+        "node": "n183",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w196",
+      "from": {
+        "node": "n183",
+        "pin": "o6"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w197",
+      "from": {
+        "node": "n183",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w198",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i8"
+      }
+    },
+    {
+      "id": "w199",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i9"
+      }
+    },
+    {
+      "id": "w200",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i10"
+      }
+    },
+    {
+      "id": "w201",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i11"
+      }
+    },
+    {
+      "id": "w202",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i12"
+      }
+    },
+    {
+      "id": "w203",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i13"
+      }
+    },
+    {
+      "id": "w204",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i14"
+      }
+    },
+    {
+      "id": "w205",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i15"
+      }
+    },
+    {
+      "id": "w206",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i16"
+      }
+    },
+    {
+      "id": "w207",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i17"
+      }
+    },
+    {
+      "id": "w208",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i18"
+      }
+    },
+    {
+      "id": "w209",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i19"
+      }
+    },
+    {
+      "id": "w210",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i20"
+      }
+    },
+    {
+      "id": "w211",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i21"
+      }
+    },
+    {
+      "id": "w212",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i22"
+      }
+    },
+    {
+      "id": "w213",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i23"
+      }
+    },
+    {
+      "id": "w214",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i24"
+      }
+    },
+    {
+      "id": "w215",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i25"
+      }
+    },
+    {
+      "id": "w216",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i26"
+      }
+    },
+    {
+      "id": "w217",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i27"
+      }
+    },
+    {
+      "id": "w218",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i28"
+      }
+    },
+    {
+      "id": "w219",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i29"
+      }
+    },
+    {
+      "id": "w220",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i30"
+      }
+    },
+    {
+      "id": "w221",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n189",
+        "pin": "i31"
+      }
+    },
+    {
+      "id": "w223",
+      "from": {
+        "node": "n185",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w224",
+      "from": {
+        "node": "n185",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w225",
+      "from": {
+        "node": "n185",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w226",
+      "from": {
+        "node": "n185",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w227",
+      "from": {
+        "node": "n185",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w228",
+      "from": {
+        "node": "n185",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w229",
+      "from": {
+        "node": "n185",
+        "pin": "o6"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w230",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w231",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i8"
+      }
+    },
+    {
+      "id": "w232",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i9"
+      }
+    },
+    {
+      "id": "w233",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i10"
+      }
+    },
+    {
+      "id": "w234",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i11"
+      }
+    },
+    {
+      "id": "w235",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i12"
+      }
+    },
+    {
+      "id": "w236",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i13"
+      }
+    },
+    {
+      "id": "w237",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i14"
+      }
+    },
+    {
+      "id": "w238",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i15"
+      }
+    },
+    {
+      "id": "w239",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i16"
+      }
+    },
+    {
+      "id": "w240",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i17"
+      }
+    },
+    {
+      "id": "w241",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i18"
+      }
+    },
+    {
+      "id": "w242",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i19"
+      }
+    },
+    {
+      "id": "w243",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i20"
+      }
+    },
+    {
+      "id": "w244",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i21"
+      }
+    },
+    {
+      "id": "w245",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i22"
+      }
+    },
+    {
+      "id": "w246",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i23"
+      }
+    },
+    {
+      "id": "w247",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i24"
+      }
+    },
+    {
+      "id": "w248",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i25"
+      }
+    },
+    {
+      "id": "w249",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i26"
+      }
+    },
+    {
+      "id": "w250",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i27"
+      }
+    },
+    {
+      "id": "w251",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i28"
+      }
+    },
+    {
+      "id": "w252",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i29"
+      }
+    },
+    {
+      "id": "w253",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i30"
+      }
+    },
+    {
+      "id": "w254",
+      "from": {
+        "node": "n185",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n222",
+        "pin": "i31"
+      }
+    },
+    {
+      "id": "w256",
+      "from": {
+        "node": "n71",
+        "pin": "n27"
+      },
+      "to": {
+        "node": "n255",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w258",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w259",
+      "from": {
+        "node": "n255",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w260",
+      "from": {
+        "node": "n255",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w261",
+      "from": {
+        "node": "n255",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w262",
+      "from": {
+        "node": "n255",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w263",
+      "from": {
+        "node": "n255",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w264",
+      "from": {
+        "node": "n255",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w265",
+      "from": {
+        "node": "n255",
+        "pin": "o6"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w266",
+      "from": {
+        "node": "n255",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i8"
+      }
+    },
+    {
+      "id": "w267",
+      "from": {
+        "node": "n255",
+        "pin": "o8"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i9"
+      }
+    },
+    {
+      "id": "w268",
+      "from": {
+        "node": "n255",
+        "pin": "o9"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i10"
+      }
+    },
+    {
+      "id": "w269",
+      "from": {
+        "node": "n255",
+        "pin": "o10"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i11"
+      }
+    },
+    {
+      "id": "w270",
+      "from": {
+        "node": "n255",
+        "pin": "o11"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i12"
+      }
+    },
+    {
+      "id": "w271",
+      "from": {
+        "node": "n255",
+        "pin": "o12"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i13"
+      }
+    },
+    {
+      "id": "w272",
+      "from": {
+        "node": "n255",
+        "pin": "o13"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i14"
+      }
+    },
+    {
+      "id": "w273",
+      "from": {
+        "node": "n255",
+        "pin": "o14"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i15"
+      }
+    },
+    {
+      "id": "w274",
+      "from": {
+        "node": "n255",
+        "pin": "o15"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i16"
+      }
+    },
+    {
+      "id": "w275",
+      "from": {
+        "node": "n255",
+        "pin": "o16"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i17"
+      }
+    },
+    {
+      "id": "w276",
+      "from": {
+        "node": "n255",
+        "pin": "o17"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i18"
+      }
+    },
+    {
+      "id": "w277",
+      "from": {
+        "node": "n255",
+        "pin": "o18"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i19"
+      }
+    },
+    {
+      "id": "w278",
+      "from": {
+        "node": "n255",
+        "pin": "o19"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i20"
+      }
+    },
+    {
+      "id": "w279",
+      "from": {
+        "node": "n255",
+        "pin": "o20"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i21"
+      }
+    },
+    {
+      "id": "w280",
+      "from": {
+        "node": "n255",
+        "pin": "o21"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i22"
+      }
+    },
+    {
+      "id": "w281",
+      "from": {
+        "node": "n255",
+        "pin": "o22"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i23"
+      }
+    },
+    {
+      "id": "w282",
+      "from": {
+        "node": "n255",
+        "pin": "o23"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i24"
+      }
+    },
+    {
+      "id": "w283",
+      "from": {
+        "node": "n255",
+        "pin": "o24"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i25"
+      }
+    },
+    {
+      "id": "w284",
+      "from": {
+        "node": "n255",
+        "pin": "o25"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i26"
+      }
+    },
+    {
+      "id": "w285",
+      "from": {
+        "node": "n255",
+        "pin": "o26"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i27"
+      }
+    },
+    {
+      "id": "w286",
+      "from": {
+        "node": "n255",
+        "pin": "o27"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i28"
+      }
+    },
+    {
+      "id": "w287",
+      "from": {
+        "node": "n255",
+        "pin": "o28"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i29"
+      }
+    },
+    {
+      "id": "w288",
+      "from": {
+        "node": "n255",
+        "pin": "o29"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i30"
+      }
+    },
+    {
+      "id": "w289",
+      "from": {
+        "node": "n255",
+        "pin": "o30"
+      },
+      "to": {
+        "node": "n257",
+        "pin": "i31"
+      }
+    },
+    {
+      "id": "w291",
+      "from": {
+        "node": "n257",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n290",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w292",
+      "from": {
+        "node": "n222",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n290",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w293",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n290",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w295",
+      "from": {
+        "node": "n189",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n294",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w296",
+      "from": {
+        "node": "n257",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n294",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w297",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n294",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w299",
+      "from": {
+        "node": "n290",
+        "pin": "n33"
+      },
+      "to": {
+        "node": "n298",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w301",
+      "from": {
+        "node": "n294",
+        "pin": "n33"
+      },
+      "to": {
+        "node": "n300",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w303",
+      "from": {
+        "node": "n298",
+        "pin": "o31"
+      },
+      "to": {
+        "node": "n302",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w305",
+      "from": {
+        "node": "n300",
+        "pin": "o31"
+      },
+      "to": {
+        "node": "n304",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w307",
+      "from": {
+        "node": "n222",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n306",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w308",
+      "from": {
+        "node": "n302",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n306",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w310",
+      "from": {
+        "node": "n189",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n309",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w311",
+      "from": {
+        "node": "n304",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n309",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w313",
+      "from": {
+        "node": "n71",
+        "pin": "n27"
+      },
+      "to": {
+        "node": "n312",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w314",
+      "from": {
+        "node": "n306",
+        "pin": "n22"
+      },
+      "to": {
+        "node": "n312",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w315",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n312",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w317",
+      "from": {
+        "node": "n312",
+        "pin": "n33"
+      },
+      "to": {
+        "node": "n316",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w318",
+      "from": {
+        "node": "n309",
+        "pin": "n22"
+      },
+      "to": {
+        "node": "n316",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w319",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n316",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w321",
+      "from": {
+        "node": "n302",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n320",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w322",
+      "from": {
+        "node": "n187",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n320",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w324",
+      "from": {
+        "node": "n304",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n323",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w325",
+      "from": {
+        "node": "n187",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n323",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w327",
+      "from": {
+        "node": "n302",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n326",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w328",
+      "from": {
+        "node": "n320",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n326",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w329",
+      "from": {
+        "node": "n320",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n326",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w330",
+      "from": {
+        "node": "n320",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n326",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w331",
+      "from": {
+        "node": "n320",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n326",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w332",
+      "from": {
+        "node": "n320",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n326",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w333",
+      "from": {
+        "node": "n320",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n326",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w334",
+      "from": {
+        "node": "n320",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n326",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w336",
+      "from": {
+        "node": "n304",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n335",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w337",
+      "from": {
+        "node": "n323",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n335",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w338",
+      "from": {
+        "node": "n323",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n335",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w339",
+      "from": {
+        "node": "n323",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n335",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w340",
+      "from": {
+        "node": "n323",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n335",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w341",
+      "from": {
+        "node": "n323",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n335",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w342",
+      "from": {
+        "node": "n323",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n335",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w343",
+      "from": {
+        "node": "n323",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n335",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w345",
+      "from": {
+        "node": "n58",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n344",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w346",
+      "from": {
+        "node": "n326",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n344",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w347",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n344",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w348",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n344",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w350",
+      "from": {
+        "node": "n60",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n349",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w351",
+      "from": {
+        "node": "n335",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n349",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w352",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n349",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w353",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n349",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w355",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n354",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w356",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n354",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w357",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n354",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w358",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n354",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w359",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n354",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w360",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n354",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w361",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n354",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w362",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n354",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w364",
+      "from": {
+        "node": "n56",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n363",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w365",
+      "from": {
+        "node": "n354",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n363",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w366",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n363",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w367",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n363",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w369",
+      "from": {
+        "node": "n58",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n368",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w371",
+      "from": {
+        "node": "n60",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n370",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w373",
+      "from": {
+        "node": "n56",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n372",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w375",
+      "from": {
+        "node": "n368",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n374",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w376",
+      "from": {
+        "node": "n14",
+        "pin": "o10"
+      },
+      "to": {
+        "node": "n374",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w378",
+      "from": {
+        "node": "n368",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n377",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w379",
+      "from": {
+        "node": "n14",
+        "pin": "o11"
+      },
+      "to": {
+        "node": "n377",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w381",
+      "from": {
+        "node": "n368",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n380",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w382",
+      "from": {
+        "node": "n14",
+        "pin": "o12"
+      },
+      "to": {
+        "node": "n380",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w384",
+      "from": {
+        "node": "n368",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n383",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w385",
+      "from": {
+        "node": "n14",
+        "pin": "o13"
+      },
+      "to": {
+        "node": "n383",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w387",
+      "from": {
+        "node": "n368",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n386",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w388",
+      "from": {
+        "node": "n14",
+        "pin": "o14"
+      },
+      "to": {
+        "node": "n386",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w390",
+      "from": {
+        "node": "n368",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n389",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w391",
+      "from": {
+        "node": "n14",
+        "pin": "o15"
+      },
+      "to": {
+        "node": "n389",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w393",
+      "from": {
+        "node": "n374",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n392",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w394",
+      "from": {
+        "node": "n377",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n392",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w395",
+      "from": {
+        "node": "n380",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n392",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w396",
+      "from": {
+        "node": "n383",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n392",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w397",
+      "from": {
+        "node": "n386",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n392",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w398",
+      "from": {
+        "node": "n389",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n392",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w400",
+      "from": {
+        "node": "n370",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n399",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w401",
+      "from": {
+        "node": "n14",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n399",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w403",
+      "from": {
+        "node": "n370",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n402",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w404",
+      "from": {
+        "node": "n14",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n402",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w406",
+      "from": {
+        "node": "n370",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n405",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w407",
+      "from": {
+        "node": "n14",
+        "pin": "o6"
+      },
+      "to": {
+        "node": "n405",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w409",
+      "from": {
+        "node": "n370",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n408",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w410",
+      "from": {
+        "node": "n14",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n408",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w412",
+      "from": {
+        "node": "n370",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n411",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w413",
+      "from": {
+        "node": "n14",
+        "pin": "o8"
+      },
+      "to": {
+        "node": "n411",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w415",
+      "from": {
+        "node": "n370",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n414",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w416",
+      "from": {
+        "node": "n14",
+        "pin": "o9"
+      },
+      "to": {
+        "node": "n414",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w418",
+      "from": {
+        "node": "n399",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n417",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w419",
+      "from": {
+        "node": "n402",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n417",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w420",
+      "from": {
+        "node": "n405",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n417",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w421",
+      "from": {
+        "node": "n408",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n417",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w422",
+      "from": {
+        "node": "n411",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n417",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w423",
+      "from": {
+        "node": "n414",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n417",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w425",
+      "from": {
+        "node": "n372",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n424",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w426",
+      "from": {
+        "node": "n14",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n424",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w428",
+      "from": {
+        "node": "n372",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n427",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w429",
+      "from": {
+        "node": "n14",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n427",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w431",
+      "from": {
+        "node": "n372",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n430",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w432",
+      "from": {
+        "node": "n14",
+        "pin": "o6"
+      },
+      "to": {
+        "node": "n430",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w434",
+      "from": {
+        "node": "n372",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n433",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w435",
+      "from": {
+        "node": "n14",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n433",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w437",
+      "from": {
+        "node": "n372",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n436",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w438",
+      "from": {
+        "node": "n14",
+        "pin": "o8"
+      },
+      "to": {
+        "node": "n436",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w440",
+      "from": {
+        "node": "n372",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n439",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w441",
+      "from": {
+        "node": "n14",
+        "pin": "o9"
+      },
+      "to": {
+        "node": "n439",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w443",
+      "from": {
+        "node": "n424",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n442",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w444",
+      "from": {
+        "node": "n427",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n442",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w445",
+      "from": {
+        "node": "n430",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n442",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w446",
+      "from": {
+        "node": "n433",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n442",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w447",
+      "from": {
+        "node": "n436",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n442",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w448",
+      "from": {
+        "node": "n439",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n442",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w450",
+      "from": {
+        "node": "n14",
+        "pin": "o31"
+      },
+      "to": {
+        "node": "n449",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w451",
+      "from": {
+        "node": "n417",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n449",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w453",
+      "from": {
+        "node": "n392",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n452",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w454",
+      "from": {
+        "node": "n449",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n452",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w456",
+      "from": {
+        "node": "n14",
+        "pin": "o31"
+      },
+      "to": {
+        "node": "n455",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w458",
+      "from": {
+        "node": "n455",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n457",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w459",
+      "from": {
+        "node": "n442",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n457",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w461",
+      "from": {
+        "node": "n457",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n460",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w463",
+      "from": {
+        "node": "n6",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n462",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w464",
+      "from": {
+        "node": "n460",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n462",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w466",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n465",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w467",
+      "from": {
+        "node": "n462",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n465",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w469",
+      "from": {
+        "node": "n4",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n468",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w470",
+      "from": {
+        "node": "n5",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n468",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w472",
+      "from": {
+        "node": "n363",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n471",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w473",
+      "from": {
+        "node": "n25",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n471",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w474",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n471",
+        "pin": "n34"
+      }
+    },
+    {
+      "id": "w475",
+      "from": {
+        "node": "n465",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n56",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w476",
+      "from": {
+        "node": "n471",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n56",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w478",
+      "from": {
+        "node": "n16",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n477",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w479",
+      "from": {
+        "node": "n344",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n477",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w480",
+      "from": {
+        "node": "n5",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n477",
+        "pin": "n34"
+      }
+    },
+    {
+      "id": "w482",
+      "from": {
+        "node": "n56",
+        "pin": "n130"
+      },
+      "to": {
+        "node": "n481",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w483",
+      "from": {
+        "node": "n349",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n481",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w484",
+      "from": {
+        "node": "n5",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n481",
+        "pin": "n34"
+      }
+    },
+    {
+      "id": "w485",
+      "from": {
+        "node": "n468",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n58",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w486",
+      "from": {
+        "node": "n477",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n58",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w487",
+      "from": {
+        "node": "n468",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n60",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w488",
+      "from": {
+        "node": "n481",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n60",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w489",
+      "from": {
+        "node": "n101",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n62",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w490",
+      "from": {
+        "node": "n105",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n65",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w492",
+      "from": {
+        "node": "n97",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n491",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w493",
+      "from": {
+        "node": "n99",
+        "pin": "o7"
+      },
+      "to": {
+        "node": "n491",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w494",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n491",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w495",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n491",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w496",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n491",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w497",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n491",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w498",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n491",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w499",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n491",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w500",
+      "from": {
+        "node": "n491",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n68",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w502",
+      "from": {
+        "node": "n179",
+        "pin": "n33"
+      },
+      "to": {
+        "node": "n501",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w503",
+      "from": {
+        "node": "n316",
+        "pin": "n33"
+      },
+      "to": {
+        "node": "n501",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w504",
+      "from": {
+        "node": "n5",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n501",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w505",
+      "from": {
+        "node": "n468",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n71",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w506",
+      "from": {
+        "node": "n501",
+        "pin": "n29"
+      },
+      "to": {
+        "node": "n71",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w508",
+      "from": {
+        "node": "n452",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n507",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w510",
+      "from": {
+        "node": "n457",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n509",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w512",
+      "from": {
+        "node": "n368",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n511",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w513",
+      "from": {
+        "node": "n368",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n511",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w514",
+      "from": {
+        "node": "n368",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n511",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w515",
+      "from": {
+        "node": "n368",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n511",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w516",
+      "from": {
+        "node": "n368",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n511",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w517",
+      "from": {
+        "node": "n368",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n511",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w519",
+      "from": {
+        "node": "n511",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n518",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w521",
+      "from": {
+        "node": "n370",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n520",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w522",
+      "from": {
+        "node": "n370",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n520",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w523",
+      "from": {
+        "node": "n370",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n520",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w524",
+      "from": {
+        "node": "n370",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n520",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w525",
+      "from": {
+        "node": "n370",
+        "pin": "o4"
+      },
+      "to": {
+        "node": "n520",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w526",
+      "from": {
+        "node": "n370",
+        "pin": "o5"
+      },
+      "to": {
+        "node": "n520",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w528",
+      "from": {
+        "node": "n520",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n527",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w530",
+      "from": {
+        "node": "n52",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n529",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w532",
+      "from": {
+        "node": "n71",
+        "pin": "n27"
+      },
+      "to": {
+        "node": "n531",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w534",
+      "from": {
+        "node": "n10",
+        "pin": "n27"
+      },
+      "to": {
+        "node": "n533",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 535
+}

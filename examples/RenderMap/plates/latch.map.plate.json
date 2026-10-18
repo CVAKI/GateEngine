@@ -1,0 +1,111 @@
+{
+  "format": 1,
+  "name": "latch.map",
+  "width": 60,
+  "height": 30,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "INPUT",
+      "x": 40,
+      "y": 30,
+      "props": {
+        "label": "S",
+        "value": 0
+      }
+    },
+    {
+      "id": "n2",
+      "type": "INPUT",
+      "x": 40,
+      "y": 90,
+      "props": {
+        "label": "R",
+        "value": 0
+      }
+    },
+    {
+      "id": "n3",
+      "type": "PLATE",
+      "x": 200,
+      "y": 30,
+      "props": {
+        "ref": "SR latch"
+      }
+    },
+    {
+      "id": "n6",
+      "type": "OUTPUT",
+      "x": 400,
+      "y": 30,
+      "props": {
+        "label": "Q"
+      }
+    },
+    {
+      "id": "n7",
+      "type": "OUTPUT",
+      "x": 400,
+      "y": 90,
+      "props": {
+        "label": "Qn"
+      }
+    },
+    {
+      "id": "n10",
+      "type": "LABEL",
+      "x": 40,
+      "y": 160,
+      "props": {
+        "label": "Two NOR gates feed each other: the loops are drawn as lanes above the gates."
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w4",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w5",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w8",
+      "from": {
+        "node": "n3",
+        "pin": "n9"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w9",
+      "from": {
+        "node": "n3",
+        "pin": "n11"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 11
+}

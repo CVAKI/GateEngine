@@ -1,0 +1,261 @@
+{
+  "format": 1,
+  "name": "PixelPaint",
+  "width": 90,
+  "height": 50,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "INPUT",
+      "x": 20,
+      "y": 40,
+      "props": {
+        "label": "X0",
+        "value": 0
+      }
+    },
+    {
+      "id": "n2",
+      "type": "INPUT",
+      "x": 20,
+      "y": 80,
+      "props": {
+        "label": "X1",
+        "value": 0
+      }
+    },
+    {
+      "id": "n3",
+      "type": "INPUT",
+      "x": 20,
+      "y": 120,
+      "props": {
+        "label": "X2",
+        "value": 0
+      }
+    },
+    {
+      "id": "n4",
+      "type": "INPUT",
+      "x": 20,
+      "y": 200,
+      "props": {
+        "label": "Y0",
+        "value": 0
+      }
+    },
+    {
+      "id": "n5",
+      "type": "INPUT",
+      "x": 20,
+      "y": 240,
+      "props": {
+        "label": "Y1",
+        "value": 0
+      }
+    },
+    {
+      "id": "n6",
+      "type": "INPUT",
+      "x": 20,
+      "y": 280,
+      "props": {
+        "label": "Y2",
+        "value": 0
+      }
+    },
+    {
+      "id": "n7",
+      "type": "MERGE",
+      "x": 150,
+      "y": 50,
+      "props": {
+        "bits": 3
+      }
+    },
+    {
+      "id": "n8",
+      "type": "MERGE",
+      "x": 150,
+      "y": 210,
+      "props": {
+        "bits": 3
+      }
+    },
+    {
+      "id": "n9",
+      "type": "INPUT",
+      "x": 20,
+      "y": 340,
+      "props": {
+        "label": "COLOR",
+        "value": 0
+      }
+    },
+    {
+      "id": "n10",
+      "type": "BUTTON",
+      "x": 20,
+      "y": 380,
+      "props": {
+        "label": "DRAW"
+      }
+    },
+    {
+      "id": "n11",
+      "type": "BUTTON",
+      "x": 20,
+      "y": 420,
+      "props": {
+        "label": "CLEAR"
+      }
+    },
+    {
+      "id": "n12",
+      "type": "SCREEN",
+      "x": 320,
+      "y": 40,
+      "props": {
+        "w": 8,
+        "h": 8,
+        "mode": "addr",
+        "color": "mono",
+        "write": "edge",
+        "view": 240
+      }
+    },
+    {
+      "id": "n24",
+      "type": "LABEL",
+      "x": 20,
+      "y": 10,
+      "props": {
+        "label": "Set X, Y and COLOR, then press DRAW. Run or turn Live on first."
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w13",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w14",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w15",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w16",
+      "from": {
+        "node": "n4",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w17",
+      "from": {
+        "node": "n5",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w18",
+      "from": {
+        "node": "n6",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w19",
+      "from": {
+        "node": "n7",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n12",
+        "pin": "x"
+      }
+    },
+    {
+      "id": "w20",
+      "from": {
+        "node": "n8",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n12",
+        "pin": "y"
+      }
+    },
+    {
+      "id": "w21",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n12",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w22",
+      "from": {
+        "node": "n10",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n12",
+        "pin": "we"
+      }
+    },
+    {
+      "id": "w23",
+      "from": {
+        "node": "n11",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n12",
+        "pin": "clr"
+      }
+    }
+  ],
+  "nextId": 25
+}

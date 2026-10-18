@@ -1,0 +1,233 @@
+{
+  "format": 1,
+  "name": "fullladder",
+  "width": 32,
+  "height": 16,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "PLATE",
+      "x": 80,
+      "y": 10,
+      "props": {
+        "ref": "halfadder"
+      }
+    },
+    {
+      "id": "n2",
+      "type": "PLATE",
+      "x": 80,
+      "y": 90,
+      "props": {
+        "ref": "halfadder"
+      }
+    },
+    {
+      "id": "n3",
+      "type": "OR",
+      "x": 240,
+      "y": 20,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n4",
+      "type": "OUTPUT",
+      "x": 270,
+      "y": 80,
+      "props": {
+        "label": "OUT1"
+      }
+    },
+    {
+      "id": "n5",
+      "type": "OUTPUT",
+      "x": 270,
+      "y": 120,
+      "props": {
+        "label": "OUT2"
+      }
+    },
+    {
+      "id": "n11",
+      "type": "INPUT",
+      "x": 10,
+      "y": 30,
+      "props": {
+        "label": "IN1",
+        "value": 0
+      }
+    },
+    {
+      "id": "n12",
+      "type": "INPUT",
+      "x": 10,
+      "y": 70,
+      "props": {
+        "label": "IN2",
+        "value": 0
+      }
+    },
+    {
+      "id": "n13",
+      "type": "INPUT",
+      "x": 10,
+      "y": 110,
+      "props": {
+        "label": "IN3",
+        "value": 0
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w6",
+      "from": {
+        "node": "n1",
+        "pin": "n17"
+      },
+      "to": {
+        "node": "n2",
+        "pin": "n8"
+      },
+      "pts": [
+        {
+          "x": 230,
+          "y": 50
+        },
+        {
+          "x": 230,
+          "y": 80
+        },
+        {
+          "x": 80,
+          "y": 80
+        }
+      ]
+    },
+    {
+      "id": "w7",
+      "from": {
+        "node": "n2",
+        "pin": "n16"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "i1"
+      },
+      "pts": [
+        {
+          "x": 240,
+          "y": 110
+        },
+        {
+          "x": 240,
+          "y": 50
+        }
+      ]
+    },
+    {
+      "id": "w8",
+      "from": {
+        "node": "n1",
+        "pin": "n16"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "i0"
+      },
+      "pts": [
+        {
+          "x": 250,
+          "y": 30
+        },
+        {
+          "x": 250,
+          "y": 50
+        }
+      ]
+    },
+    {
+      "id": "w9",
+      "from": {
+        "node": "n2",
+        "pin": "n17"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w14",
+      "from": {
+        "node": "n11",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n1",
+        "pin": "n8"
+      }
+    },
+    {
+      "id": "w15",
+      "from": {
+        "node": "n12",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n1",
+        "pin": "n9"
+      },
+      "pts": [
+        {
+          "x": 70,
+          "y": 110
+        },
+        {
+          "x": 70,
+          "y": 40
+        }
+      ]
+    },
+    {
+      "id": "w16",
+      "from": {
+        "node": "n13",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n2",
+        "pin": "n9"
+      }
+    },
+    {
+      "id": "w19",
+      "from": {
+        "node": "n3",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "d"
+      },
+      "pts": [
+        {
+          "x": 300,
+          "y": 70
+        },
+        {
+          "x": 260,
+          "y": 70
+        },
+        {
+          "x": 260,
+          "y": 80
+        }
+      ]
+    }
+  ],
+  "nextId": 20,
+  "boxes": []
+}

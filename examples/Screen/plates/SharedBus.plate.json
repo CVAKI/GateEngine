@@ -1,0 +1,187 @@
+{
+  "format": 1,
+  "name": "SharedBus",
+  "width": 70,
+  "height": 40,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "INPUT",
+      "x": 20,
+      "y": 30,
+      "props": {
+        "label": "A",
+        "value": 0
+      }
+    },
+    {
+      "id": "n2",
+      "type": "INPUT",
+      "x": 20,
+      "y": 70,
+      "props": {
+        "label": "A-EN",
+        "value": 0
+      }
+    },
+    {
+      "id": "n3",
+      "type": "INPUT",
+      "x": 20,
+      "y": 150,
+      "props": {
+        "label": "B",
+        "value": 0
+      }
+    },
+    {
+      "id": "n4",
+      "type": "INPUT",
+      "x": 20,
+      "y": 190,
+      "props": {
+        "label": "B-EN",
+        "value": 0
+      }
+    },
+    {
+      "id": "n5",
+      "type": "TRI",
+      "x": 140,
+      "y": 40,
+      "props": {}
+    },
+    {
+      "id": "n6",
+      "type": "TRI",
+      "x": 140,
+      "y": 160,
+      "props": {}
+    },
+    {
+      "id": "n7",
+      "type": "TUNNEL_IN",
+      "x": 260,
+      "y": 60,
+      "props": {
+        "name": "BUS"
+      }
+    },
+    {
+      "id": "n8",
+      "type": "TUNNEL_IN",
+      "x": 260,
+      "y": 180,
+      "props": {
+        "name": "BUS"
+      }
+    },
+    {
+      "id": "n9",
+      "type": "TUNNEL_OUT",
+      "x": 400,
+      "y": 110,
+      "props": {
+        "name": "BUS"
+      }
+    },
+    {
+      "id": "n10",
+      "type": "OUTPUT",
+      "x": 500,
+      "y": 110,
+      "props": {
+        "label": "BUS"
+      }
+    },
+    {
+      "id": "n18",
+      "type": "LABEL",
+      "x": 20,
+      "y": 10,
+      "props": {
+        "label": "Both enables on with different values = bus conflict (orange badge)."
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w11",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w12",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "en"
+      }
+    },
+    {
+      "id": "w13",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w14",
+      "from": {
+        "node": "n4",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "en"
+      }
+    },
+    {
+      "id": "w15",
+      "from": {
+        "node": "n5",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w16",
+      "from": {
+        "node": "n6",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w17",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n10",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 19
+}

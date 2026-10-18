@@ -1,0 +1,212 @@
+{
+  "format": 1,
+  "name": "CALCULATER.map",
+  "width": 53,
+  "height": 34,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "PLATE",
+      "x": 320,
+      "y": 110,
+      "props": {
+        "ref": "8BIT-AS"
+      }
+    },
+    {
+      "id": "n4",
+      "type": "BUS_IN",
+      "x": 60,
+      "y": 120,
+      "props": {
+        "label": "A",
+        "bits": 8,
+        "value": 0,
+        "fmt": "signed"
+      }
+    },
+    {
+      "id": "n5",
+      "type": "BUS_IN",
+      "x": 60,
+      "y": 150,
+      "props": {
+        "label": "B",
+        "bits": 8,
+        "value": 0,
+        "fmt": "signed"
+      }
+    },
+    {
+      "id": "n8",
+      "type": "BUS_IN",
+      "x": 60,
+      "y": 220,
+      "props": {
+        "label": "C",
+        "bits": 3,
+        "value": 0,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n9",
+      "type": "SPLIT",
+      "x": 160,
+      "y": 200,
+      "props": {
+        "bits": 3,
+        "flip": true
+      }
+    },
+    {
+      "id": "n14",
+      "type": "BUS_OUT",
+      "x": 50,
+      "y": 80,
+      "props": {
+        "label": "OUT1",
+        "bits": 8,
+        "fmt": "signed"
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w6",
+      "from": {
+        "node": "n4",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n1",
+        "pin": "n10"
+      }
+    },
+    {
+      "id": "w7",
+      "from": {
+        "node": "n5",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n1",
+        "pin": "n50"
+      },
+      "pts": [
+        {
+          "x": 230,
+          "y": 200
+        },
+        {
+          "x": 230,
+          "y": 190
+        }
+      ]
+    },
+    {
+      "id": "w10",
+      "from": {
+        "node": "n8",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n9",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w11",
+      "from": {
+        "node": "n9",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n1",
+        "pin": "n58"
+      },
+      "pts": [
+        {
+          "x": 250,
+          "y": 210
+        },
+        {
+          "x": 250,
+          "y": 170
+        }
+      ]
+    },
+    {
+      "id": "w12",
+      "from": {
+        "node": "n9",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n1",
+        "pin": "n59"
+      },
+      "pts": [
+        {
+          "x": 270,
+          "y": 230
+        },
+        {
+          "x": 270,
+          "y": 190
+        }
+      ]
+    },
+    {
+      "id": "w13",
+      "from": {
+        "node": "n9",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n1",
+        "pin": "n60"
+      },
+      "pts": [
+        {
+          "x": 290,
+          "y": 310
+        },
+        {
+          "x": 290,
+          "y": 220
+        }
+      ]
+    },
+    {
+      "id": "w16",
+      "from": {
+        "node": "n1",
+        "pin": "n54"
+      },
+      "to": {
+        "node": "n14",
+        "pin": "d"
+      },
+      "pts": [
+        {
+          "x": 500,
+          "y": 190
+        },
+        {
+          "x": 500,
+          "y": 40
+        },
+        {
+          "x": 20,
+          "y": 40
+        },
+        {
+          "x": 20,
+          "y": 90
+        }
+      ]
+    }
+  ],
+  "nextId": 17
+}

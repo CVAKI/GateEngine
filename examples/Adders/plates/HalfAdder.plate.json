@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "name": "HalfAdder",
+  "width": 45,
+  "height": 28,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "INPUT",
+      "x": 10,
+      "y": 40,
+      "props": {
+        "label": "A",
+        "value": 0
+      }
+    },
+    {
+      "id": "n2",
+      "type": "INPUT",
+      "x": 10,
+      "y": 200,
+      "props": {
+        "label": "B",
+        "value": 0
+      }
+    },
+    {
+      "id": "n3",
+      "type": "XOR",
+      "x": 200,
+      "y": 40,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n4",
+      "type": "AND",
+      "x": 200,
+      "y": 160,
+      "props": {
+        "inputs": 2
+      }
+    },
+    {
+      "id": "n5",
+      "type": "OUTPUT",
+      "x": 350,
+      "y": 60,
+      "props": {
+        "label": "S"
+      }
+    },
+    {
+      "id": "n6",
+      "type": "OUTPUT",
+      "x": 350,
+      "y": 180,
+      "props": {
+        "label": "C"
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w7",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w8",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n3",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w9",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w10",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w11",
+      "from": {
+        "node": "n3",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w12",
+      "from": {
+        "node": "n4",
+        "pin": "y"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 13
+}

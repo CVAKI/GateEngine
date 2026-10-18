@@ -1,0 +1,413 @@
+{
+  "format": 1,
+  "name": "Accumulator",
+  "width": 117,
+  "height": 53,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "BUS_IN",
+      "x": 10,
+      "y": 10,
+      "props": {
+        "label": "D",
+        "bits": 8,
+        "value": 0,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n2",
+      "type": "INPUT",
+      "x": 10,
+      "y": 100,
+      "props": {
+        "label": "CLR",
+        "value": 0
+      }
+    },
+    {
+      "id": "n3",
+      "type": "INPUT",
+      "x": 10,
+      "y": 140,
+      "props": {
+        "label": "CLK",
+        "value": 0
+      }
+    },
+    {
+      "id": "n4",
+      "type": "PLATE",
+      "x": 300,
+      "y": 10,
+      "props": {
+        "ref": "Adder 8-bit"
+      }
+    },
+    {
+      "id": "n5",
+      "type": "PLATE",
+      "x": 520,
+      "y": 10,
+      "props": {
+        "ref": "MUX 2:1 8-bit"
+      }
+    },
+    {
+      "id": "n6",
+      "type": "PLATE",
+      "x": 740,
+      "y": 10,
+      "props": {
+        "ref": "Register 8-bit"
+      }
+    },
+    {
+      "id": "n7",
+      "type": "BUS_OUT",
+      "x": 980,
+      "y": 20,
+      "props": {
+        "label": "Q",
+        "bits": 8,
+        "fmt": "dec"
+      }
+    },
+    {
+      "id": "n8",
+      "type": "MERGE",
+      "x": 560,
+      "y": 330,
+      "props": {
+        "bits": 8
+      }
+    },
+    {
+      "id": "n9",
+      "type": "CONST1",
+      "x": 700,
+      "y": 260,
+      "props": {}
+    },
+    {
+      "id": "n10",
+      "type": "CONST0",
+      "x": 480,
+      "y": 330,
+      "props": {}
+    },
+    {
+      "id": "n12",
+      "type": "CONST0",
+      "x": 480,
+      "y": 350,
+      "props": {}
+    },
+    {
+      "id": "n14",
+      "type": "CONST0",
+      "x": 480,
+      "y": 370,
+      "props": {}
+    },
+    {
+      "id": "n16",
+      "type": "CONST0",
+      "x": 480,
+      "y": 390,
+      "props": {}
+    },
+    {
+      "id": "n18",
+      "type": "CONST0",
+      "x": 480,
+      "y": 410,
+      "props": {}
+    },
+    {
+      "id": "n20",
+      "type": "CONST0",
+      "x": 480,
+      "y": 430,
+      "props": {}
+    },
+    {
+      "id": "n22",
+      "type": "CONST0",
+      "x": 480,
+      "y": 450,
+      "props": {}
+    },
+    {
+      "id": "n24",
+      "type": "CONST0",
+      "x": 480,
+      "y": 470,
+      "props": {}
+    },
+    {
+      "id": "n35",
+      "type": "LABEL",
+      "x": 10,
+      "y": 440,
+      "props": {
+        "label": "Q = Q + D on every clock edge. CLR=1 clears Q to 0."
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w11",
+      "from": {
+        "node": "n10",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w13",
+      "from": {
+        "node": "n12",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w15",
+      "from": {
+        "node": "n14",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w17",
+      "from": {
+        "node": "n16",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w19",
+      "from": {
+        "node": "n18",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i4"
+      }
+    },
+    {
+      "id": "w21",
+      "from": {
+        "node": "n20",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i5"
+      }
+    },
+    {
+      "id": "w23",
+      "from": {
+        "node": "n22",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i6"
+      }
+    },
+    {
+      "id": "w25",
+      "from": {
+        "node": "n24",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "i7"
+      }
+    },
+    {
+      "id": "w26",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w27",
+      "from": {
+        "node": "n4",
+        "pin": "n49"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w28",
+      "from": {
+        "node": "n8",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w29",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n5",
+        "pin": "n7"
+      },
+      "pts": [
+        {
+          "x": 250,
+          "y": 110
+        },
+        {
+          "x": 250,
+          "y": 300
+        },
+        {
+          "x": 500,
+          "y": 300
+        },
+        {
+          "x": 500,
+          "y": 70
+        }
+      ]
+    },
+    {
+      "id": "w30",
+      "from": {
+        "node": "n5",
+        "pin": "n49"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w31",
+      "from": {
+        "node": "n9",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "n4"
+      },
+      "pts": [
+        {
+          "x": 720,
+          "y": 270
+        },
+        {
+          "x": 720,
+          "y": 50
+        }
+      ]
+    },
+    {
+      "id": "w32",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "n5"
+      },
+      "pts": [
+        {
+          "x": 230,
+          "y": 150
+        },
+        {
+          "x": 230,
+          "y": 380
+        },
+        {
+          "x": 710,
+          "y": 380
+        },
+        {
+          "x": 710,
+          "y": 70
+        }
+      ]
+    },
+    {
+      "id": "w33",
+      "from": {
+        "node": "n6",
+        "pin": "n29"
+      },
+      "to": {
+        "node": "n7",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w34",
+      "from": {
+        "node": "n6",
+        "pin": "n29"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "n1"
+      },
+      "pts": [
+        {
+          "x": 950,
+          "y": 30
+        },
+        {
+          "x": 950,
+          "y": 430
+        },
+        {
+          "x": 270,
+          "y": 430
+        },
+        {
+          "x": 270,
+          "y": 30
+        }
+      ]
+    }
+  ],
+  "nextId": 36
+}

@@ -1,0 +1,343 @@
+{
+  "format": 1,
+  "name": "G-MUX32",
+  "width": 83,
+  "height": 78,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "BUS_IN",
+      "x": 20,
+      "y": 20,
+      "props": {
+        "label": "A",
+        "bits": 32,
+        "value": 0,
+        "fmt": "hex"
+      }
+    },
+    {
+      "id": "n2",
+      "type": "BUS_IN",
+      "x": 20,
+      "y": 300,
+      "props": {
+        "label": "B",
+        "bits": 32,
+        "value": 0,
+        "fmt": "hex"
+      }
+    },
+    {
+      "id": "n3",
+      "type": "INPUT",
+      "x": 20,
+      "y": 700,
+      "props": {
+        "label": "SEL",
+        "value": 0
+      }
+    },
+    {
+      "id": "n4",
+      "type": "SPLIT",
+      "x": 100,
+      "y": 20,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 8
+      }
+    },
+    {
+      "id": "n6",
+      "type": "SPLIT",
+      "x": 100,
+      "y": 300,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 8
+      }
+    },
+    {
+      "id": "n8",
+      "type": "PLATE",
+      "x": 320,
+      "y": 20,
+      "props": {
+        "ref": "8MUX"
+      }
+    },
+    {
+      "id": "n12",
+      "type": "PLATE",
+      "x": 320,
+      "y": 180,
+      "props": {
+        "ref": "8MUX"
+      }
+    },
+    {
+      "id": "n16",
+      "type": "PLATE",
+      "x": 320,
+      "y": 340,
+      "props": {
+        "ref": "8MUX"
+      }
+    },
+    {
+      "id": "n20",
+      "type": "PLATE",
+      "x": 320,
+      "y": 500,
+      "props": {
+        "ref": "8MUX"
+      }
+    },
+    {
+      "id": "n24",
+      "type": "MERGE",
+      "x": 560,
+      "y": 20,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 8
+      }
+    },
+    {
+      "id": "n29",
+      "type": "BUS_OUT",
+      "x": 640,
+      "y": 60,
+      "props": {
+        "label": "Y",
+        "bits": 32,
+        "fmt": "hex"
+      }
+    },
+    {
+      "id": "n31",
+      "type": "LABEL",
+      "x": 20,
+      "y": 720,
+      "props": {
+        "label": "SEL=0 passes A, SEL=1 passes B. Four of your 8MUX side by side."
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w5",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w7",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w9",
+      "from": {
+        "node": "n4",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w10",
+      "from": {
+        "node": "n6",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w11",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "n34"
+      }
+    },
+    {
+      "id": "w13",
+      "from": {
+        "node": "n4",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n12",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w14",
+      "from": {
+        "node": "n6",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n12",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w15",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n12",
+        "pin": "n34"
+      }
+    },
+    {
+      "id": "w17",
+      "from": {
+        "node": "n4",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w18",
+      "from": {
+        "node": "n6",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w19",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n16",
+        "pin": "n34"
+      }
+    },
+    {
+      "id": "w21",
+      "from": {
+        "node": "n4",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n20",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w22",
+      "from": {
+        "node": "n6",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n20",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w23",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n20",
+        "pin": "n34"
+      }
+    },
+    {
+      "id": "w25",
+      "from": {
+        "node": "n8",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n24",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w26",
+      "from": {
+        "node": "n12",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n24",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w27",
+      "from": {
+        "node": "n16",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n24",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w28",
+      "from": {
+        "node": "n20",
+        "pin": "n37"
+      },
+      "to": {
+        "node": "n24",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w30",
+      "from": {
+        "node": "n24",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n29",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 32
+}

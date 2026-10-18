@@ -1,0 +1,66 @@
+{
+  "name": "gate-engine",
+  "productName": "Gate Engine",
+  "version": "0.7.0",
+  "description": "Logic gate circuit IDE - build plates, reuse them as components, simulate live.",
+  "author": "CVAKI",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node tests/sim.test.js && node tests/builtins.test.js && node tests/bus.test.js && node tests/series.test.js && node tests/maplayout.test.js && node tests/wide.test.js && node tests/memory.test.js",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win",
+    "dist:linux": "electron-builder --linux",
+    "dist:mac": "electron-builder --mac",
+    "dist:all": "electron-builder --win --linux --mac"
+  },
+  "devDependencies": {
+    "electron": "^44.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.siva.gateengine",
+    "productName": "Gate Engine",
+    "files": [
+      "main.js",
+      "preload.js",
+      "HowItsWork.md",
+      "src/**/*",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.png"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png",
+      "category": "Development"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.png",
+      "category": "public.app-category.developer-tools"
+    },
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
+    "nsis": {
+      "artifactName": "${productName} Setup ${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "${productName} Portable ${version}.${ext}"
+    }
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "format": 1,
+  "name": "G-ADD32",
+  "width": 87,
+  "height": 131,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "BUS_IN",
+      "x": 20,
+      "y": 20,
+      "props": {
+        "label": "A",
+        "bits": 32,
+        "value": 0,
+        "fmt": "hex"
+      }
+    },
+    {
+      "id": "n2",
+      "type": "BUS_IN",
+      "x": 20,
+      "y": 300,
+      "props": {
+        "label": "B",
+        "bits": 32,
+        "value": 0,
+        "fmt": "hex"
+      }
+    },
+    {
+      "id": "n3",
+      "type": "INPUT",
+      "x": 20,
+      "y": 700,
+      "props": {
+        "label": "SUB",
+        "value": 0
+      }
+    },
+    {
+      "id": "n4",
+      "type": "SPLIT",
+      "x": 100,
+      "y": 20,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 8
+      }
+    },
+    {
+      "id": "n6",
+      "type": "SPLIT",
+      "x": 100,
+      "y": 300,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 8
+      }
+    },
+    {
+      "id": "n8",
+      "type": "PLATE",
+      "x": 320,
+      "y": 20,
+      "props": {
+        "ref": "G-ADD8"
+      }
+    },
+    {
+      "id": "n13",
+      "type": "PLATE",
+      "x": 320,
+      "y": 320,
+      "props": {
+        "ref": "G-ADD8"
+      }
+    },
+    {
+      "id": "n18",
+      "type": "PLATE",
+      "x": 320,
+      "y": 620,
+      "props": {
+        "ref": "G-ADD8"
+      }
+    },
+    {
+      "id": "n23",
+      "type": "PLATE",
+      "x": 320,
+      "y": 920,
+      "props": {
+        "ref": "G-ADD8"
+      }
+    },
+    {
+      "id": "n28",
+      "type": "MERGE",
+      "x": 600,
+      "y": 20,
+      "props": {
+        "bits": 32,
+        "flip": false,
+        "group": 8
+      }
+    },
+    {
+      "id": "n33",
+      "type": "BUS_OUT",
+      "x": 680,
+      "y": 60,
+      "props": {
+        "label": "S",
+        "bits": 32,
+        "fmt": "hex"
+      }
+    },
+    {
+      "id": "n35",
+      "type": "OUTPUT",
+      "x": 680,
+      "y": 400,
+      "props": {
+        "label": "COUT"
+      }
+    },
+    {
+      "id": "n37",
+      "type": "LABEL",
+      "x": 20,
+      "y": 1250,
+      "props": {
+        "label": "Four 8-bit adders chained by the carry = 32-bit add (SUB=1 makes it A - B)."
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w5",
+      "from": {
+        "node": "n1",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n4",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w7",
+      "from": {
+        "node": "n2",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n6",
+        "pin": "bus"
+      }
+    },
+    {
+      "id": "w9",
+      "from": {
+        "node": "n4",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w10",
+      "from": {
+        "node": "n6",
+        "pin": "o0"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w11",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w12",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n8",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w14",
+      "from": {
+        "node": "n4",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n13",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w15",
+      "from": {
+        "node": "n6",
+        "pin": "o1"
+      },
+      "to": {
+        "node": "n13",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w16",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n13",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w17",
+      "from": {
+        "node": "n8",
+        "pin": "n76"
+      },
+      "to": {
+        "node": "n13",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w19",
+      "from": {
+        "node": "n4",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n18",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w20",
+      "from": {
+        "node": "n6",
+        "pin": "o2"
+      },
+      "to": {
+        "node": "n18",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w21",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n18",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w22",
+      "from": {
+        "node": "n13",
+        "pin": "n76"
+      },
+      "to": {
+        "node": "n18",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w24",
+      "from": {
+        "node": "n4",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n23",
+        "pin": "n1"
+      }
+    },
+    {
+      "id": "w25",
+      "from": {
+        "node": "n6",
+        "pin": "o3"
+      },
+      "to": {
+        "node": "n23",
+        "pin": "n2"
+      }
+    },
+    {
+      "id": "w26",
+      "from": {
+        "node": "n3",
+        "pin": "q"
+      },
+      "to": {
+        "node": "n23",
+        "pin": "n3"
+      }
+    },
+    {
+      "id": "w27",
+      "from": {
+        "node": "n18",
+        "pin": "n76"
+      },
+      "to": {
+        "node": "n23",
+        "pin": "n4"
+      }
+    },
+    {
+      "id": "w29",
+      "from": {
+        "node": "n8",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n28",
+        "pin": "i0"
+      }
+    },
+    {
+      "id": "w30",
+      "from": {
+        "node": "n13",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n28",
+        "pin": "i1"
+      }
+    },
+    {
+      "id": "w31",
+      "from": {
+        "node": "n18",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n28",
+        "pin": "i2"
+      }
+    },
+    {
+      "id": "w32",
+      "from": {
+        "node": "n23",
+        "pin": "n74"
+      },
+      "to": {
+        "node": "n28",
+        "pin": "i3"
+      }
+    },
+    {
+      "id": "w34",
+      "from": {
+        "node": "n28",
+        "pin": "bus"
+      },
+      "to": {
+        "node": "n33",
+        "pin": "d"
+      }
+    },
+    {
+      "id": "w36",
+      "from": {
+        "node": "n23",
+        "pin": "n76"
+      },
+      "to": {
+        "node": "n35",
+        "pin": "d"
+      }
+    }
+  ],
+  "nextId": 38
+}
